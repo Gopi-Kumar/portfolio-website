@@ -37,7 +37,7 @@ body #hero {
 body #hero img {
   border-radius: 50%;
   border: 12px solid white;
-  box-shadow: 5px 5px 10px #999999;
+  box-shadow: 5px 5px 10px #cccccc;
 }
 body #hero .about p {
   font-size: 20px;
@@ -49,8 +49,71 @@ body #hero .about #name {
 body #hero .about #pos {
   color: #770381;
 }
+body #skills {
+  background: #770381;
+  padding: 1rem;
+}
+body #skills h1 {
+  text-align: center;
+  color: white;
+  width: 100vw;
+  text-decoration: underline;
+}
+body #skills #hardSkills #pl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body #skills #hardSkills #pl .plSkill {
+  background: #e7e7e7;
+  padding: 1rem;
+  margin: 1.5rem;
+}
+body #skills #hardSkills #pl .plSkill #main {
+  text-align: center;
+  font-weight: 600;
+}
+body #skills #hardSkills #pl .plSkill #secondry {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body #skills #hardSkills #pl .plSkill #secondry span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 10px;
+  background: white;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px #cccccc;
+}
+body #skills #hardSkills #pl .plSkill #secondry span li {
+  margin-left: 5px;
+}
+body #skills #hardSkills #pl .plSkill #secondry span img {
+  width: 35px;
+  height: 35px;
+}
+body #skills #softSkills {
+  color: black;
+  background: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  list-style: none;
+}
 body #social_media {
-  background-color: #e7bd02;
+  background-color: #ea00ff;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;

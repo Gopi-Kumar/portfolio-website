@@ -1,31 +1,131 @@
+import htmlLogo from '../images/html.png'
+import cssLogo from '../images/css.png'
+import angularLogo from '../images/angular.png'
+import bootstrapLogo from '../images/bootstrap.png'
+import cLogo from '../images/c.png'
+import excelLogo from '../images/excel.png'
+import gitLogo from '../images/git.png'
+import javaLogo from '../images/java.png'
+import mongoLogo from '../images/mongo.png'
+import nodeLogo from '../images/node.png'
+import photoshopLogo from '../images/photoshop.png'
+import phpLogo from '../images/php.png'
+import powerpointLogo from '../images/powerpoint.png'
+import pythonLogo from '../images/python.png'
+import reactLogo from '../images/react.png'
+import sassLogo from '../images/sass.png'
+import sqlLogo from '../images/sql.png'
+import vsLogo from '../images/vs.png'
+import wordLogo from '../images/word.png'
+
+
 const Skills = () => {
     const hardSkills = {
         programmingLanguages : [
             {
                 main : "Client Side",
-                secondary : ["HTML","Angular","React","CSS","SASS","Bootstrap"],
+                secondary : [
+                    { 
+                        src : htmlLogo,
+                        name : "HTML"
+                    },
+                    { 
+                        src : angularLogo,
+                        name : "Angular"
+                    },
+                    {
+                         src : reactLogo,
+                        name : "React"
+                    },
+                    {
+                         src : cssLogo,
+                        name : "CSS"
+                    },
+                    {
+                        src : sassLogo,
+                        name : "SASS"
+                    },
+                    { 
+                        src : bootstrapLogo,
+                        name : "Bootstrap"
+                    }
+                ],
             },
             {
                 main : "Server Side",
-                secondary : ["PHP", "Nodejs"]
+                secondary : [
+                    {
+                        src : phpLogo,
+                         name : "PHP"
+                    },
+                    {
+                        src : nodeLogo,
+                        name : "Nodejs"
+                    }
+                 ]
             },
             {
                 main : "Database",
-                secondary : ["SQL", "MongoDB"]
+                secondary : [
+                    {
+                        src : sqlLogo,
+                        name : "SQL"
+                    },
+                    {
+                        src : mongoLogo,
+                        name : "MongoDB"
+                    }
+                ]
             },
             {
                 main: "Programming Languages",
-                secondary : ["C++","Python","Java"]
+                secondary : [
+                    {
+                        src : cLogo,
+                        name : "C++"
+                    },
+                    {
+                        src : pythonLogo,
+                        name : "Python"
+                    },
+                    {
+                        src : javaLogo,
+                        name : "Java"
+                    }
+
+                    ]
+            },{
+                main : "Tools",
+                secondary : [
+                    {
+                        src : gitLogo,
+                        name : "Git"
+                    },
+                    {
+                        src : vsLogo,
+                        name : "Visual Studio Code"
+                    },
+                    {
+                        src : wordLogo,
+                        name : "MS Word"
+                    },
+                    {
+                        src  :excelLogo,
+                        name : "MS Excel"
+                    },
+                    {
+                        src : powerpointLogo,
+                        name : "MS Powerpoint"
+                    },
+                    {
+                        src : photoshopLogo,
+                        name : "Adobe Photoshop"
+                    }
+                ]
+
             }
+
         ],
-        tools: [
-            "Git",
-            "Visual Studio Code",
-            "MS Word",
-            "MS Excel",
-            "MS Powerpoint",
-            "Adobe Photoshop"
-        ]
     }
 
     const softSkill = ["Well Disciplined","Good Listener","Good learner", "Team worker","Creative","Adaptability","Logical thinking"]
@@ -34,7 +134,6 @@ const Skills = () => {
         <div id="skills">
             <h1 className="skills_header">My Hard Skills</h1>
             <div id="hardSkills">
-                <p>Programming Languages</p>
                 <div id="pl">
                     {
                         hardSkills["programmingLanguages"].map(pl => {
@@ -44,7 +143,10 @@ const Skills = () => {
                                     <section id="secondry">
                                         {pl.secondary.map(pls => {
                                             return (
-                                                <li>{pls}</li>
+                                                <span>
+                                                <img src={pls.src} alt=""/>
+                                                <li>{pls.name}</li>
+                                                </span>
                                             )
                                         })}
                                     </section>
@@ -52,14 +154,6 @@ const Skills = () => {
                             )
                         })
                     }
-                </div>
-                <div id="t">
-                <p>Tools</p>
-                {hardSkills.tools.map(t => {
-                    return (
-                        <p>{t}</p>
-                    )
-                })}
                 </div>
             </div>
             <h1 className="skills_header">My Soft Skills</h1>
