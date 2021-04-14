@@ -3,12 +3,12 @@ function Message() {
         console.log("Message send");
     }
     return (
-        <div className="message_form">
+        <div id="message">
             <h1>Message Us</h1>
             <form onSubmit={handleSubmit}>
                 <div className="info">
                     <div className="name">
-                        <label htmlfor="input_name">Name: </label>
+                        <label htmlFor="input_name">Name: </label>
                         <input type="text" id="input_name" />
                     </div>
                     <div className="email">
@@ -20,7 +20,7 @@ function Message() {
                     <label htmlFor="message">Enter your Message: </label>
                     <textarea id="message" cols="30" rows="10"></textarea>
                 </div>
-                <input type="submit" value="Send Message"/>
+                <input  className="button" type="submit" value="Message Us"/>
             </form>
         </div>
     )

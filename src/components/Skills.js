@@ -159,7 +159,7 @@ const Skills = () => {
             <h1 className="skills_header">My Soft Skills</h1>
             <div id="softSkills">
                 {softSkill.map(ss => {
-                    return <li>{ss}</li>
+                    return <li key={Math.random()}>{ss}</li>
                 })}
             </div>
         </div>
