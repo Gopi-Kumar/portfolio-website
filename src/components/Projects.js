@@ -3,7 +3,7 @@ import todo from '../images/todo.PNG'
 import Alarm from '../images/alarm.PNG'
 import ofs from '../images/file.PNG'
 
-export default () => {
+const Project =  () => {
     const projects = [
         {
             name : "Online File Sharing",
@@ -53,7 +53,7 @@ export default () => {
             {
                 projects.map(p => {
                     return (
-                        <div className="project">
+                        <div className="project" key={Math.random()}>
                             <div className="info">
                                 <p className="name">{p.name}</p>
                                 <div className="about">{p.about}</div>
@@ -73,3 +73,5 @@ export default () => {
         </div>
     )
 }
+
+export default Project;

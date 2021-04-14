@@ -5,7 +5,7 @@ const Navbar = ()=>{
                     <p>gkkaushik</p>
                 </div>
                 <div className="nav">
-                    <a href="#">Home</a>
+                    <a href="#hero">Home</a>
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="#message">Hire Me</a>

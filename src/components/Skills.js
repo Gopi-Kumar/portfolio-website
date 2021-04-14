@@ -138,12 +138,12 @@ const Skills = () => {
                     {
                         hardSkills["programmingLanguages"].map(pl => {
                             return (
-                                <div className="plSkill">
+                                <div key={Math.random()} className="plSkill">
                                     <section id="main">{pl.main}</section>
                                     <section id="secondry">
                                         {pl.secondary.map(pls => {
                                             return (
-                                                <span>
+                                                <span key={Math.random()}>
                                                 <img src={pls.src} alt=""/>
                                                 <li>{pls.name}</li>
                                                 </span>
