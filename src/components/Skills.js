@@ -28,7 +28,7 @@ const Skills = () => {
         ]
     }
 
-    const softSkill = ["Well Disciplined","Good Listener","Good learner", "Team worker","Creative"]
+    const softSkill = ["Well Disciplined","Good Listener","Good learner", "Team worker","Creative","Adaptability","Logical thinking"]
 
     return (
         <div id="skills">

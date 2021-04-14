@@ -1,0 +1,82 @@
+@import './color.scss';
+
+@import './library.scss';
+
+body{
+    width: 100%;
+    //navbar section
+    .navbar{
+        @include display_as_row_space_between;    
+        background: $main-bg-color;
+        color:$white;
+        padding:0.5rem;
+        .logo p{
+            font-size: 25px;
+        }
+        .nav{
+            @include display_as_row_end;
+            a{
+                font-size: 15px;
+                color:$white;
+                margin-right:15px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    //Hero section
+    #hero{
+        @include display_as_column_center;
+        text-align: center;
+        padding: 2rem;
+        background:$light-gray;
+        img{
+            border-radius: 50%;
+            border: 12px solid $white;
+            box-shadow: 5px 5px 10px $light-black;
+        }
+        .about{
+            p{
+                font-size: 20px;
+            }
+            #name{
+                font-weight: 600;
+                font-size: 30px;
+            }
+            #pos{
+                color:$main-bg-color;
+            }
+        }
+    }
+
+
+
+
+
+    //social media section
+    #social_media{
+        background-color: $yellow;
+        @include display_as_row_end;
+        padding:0.3rem;
+
+
+        a{
+            @include display_as_row_end;
+            text-decoration: none;
+            background:$white;
+            color:$black;
+            margin-left: 5px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            i{
+                font-size: 15px;
+                margin-right:3px;
+            }
+            
+            p{
+                font-size: 9px;
+            }
+        }
+    }
+}

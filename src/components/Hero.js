@@ -6,8 +6,7 @@ const Hero = ()=>{
                 <p>Hi,My name is </p>
                 <span id="name">Gopi Kumar Kaushik</span>
                 <p>I am <span id="pos">Full Stack Developer</span></p>
-                <p>Who likes make thing using diffrent technologies like: MERN Stack, Python, C++ etc</p>
-                <p>Go ahead if you are interested..</p>
+                <p>Who likes make thing using diffrent technologies like: MERN Stack, Python, C++ etc.Go ahead if you are interested..</p>
 
             </div>
         </div>

@@ -2,7 +2,7 @@ const Navbar = ()=>{
         return(
             <div className="navbar">
                 <div className="logo">
-                    gkkaushik
+                    <p>gkkaushik</p>
                 </div>
                 <div className="nav">
                     <a href="#">Home</a>

@@ -1,0 +1,81 @@
+body {
+  width: 100%;
+}
+body .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #770381;
+  color: white;
+  padding: 0.5rem;
+}
+body .navbar .logo p {
+  font-size: 25px;
+}
+body .navbar .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .navbar .nav a {
+  font-size: 15px;
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+body #hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: #e7e7e7;
+}
+body #hero img {
+  border-radius: 50%;
+  border: 12px solid white;
+  box-shadow: 5px 5px 10px #999999;
+}
+body #hero .about p {
+  font-size: 20px;
+}
+body #hero .about #name {
+  font-weight: 600;
+  font-size: 30px;
+}
+body #hero .about #pos {
+  color: #770381;
+}
+body #social_media {
+  background-color: #e7bd02;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.3rem;
+}
+body #social_media a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  background: white;
+  color: black;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body #social_media a i {
+  font-size: 15px;
+  margin-right: 3px;
+}
+body #social_media a p {
+  font-size: 9px;
+}
+
+/*# sourceMappingURL=app.css.map */
