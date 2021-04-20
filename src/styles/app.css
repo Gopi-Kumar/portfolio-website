@@ -27,6 +27,9 @@ body .navbar .nav a {
   margin-right: 15px;
   text-decoration: none;
 }
+body .navbar i {
+  display: none;
+}
 body #hero {
   display: flex;
   flex-direction: column;
@@ -253,11 +256,32 @@ body #social_media a p {
   font-size: 9px;
 }
 @media (max-width: 500px) {
+  body body {
+    display: none;
+  }
   body #social_media p {
     display: none;
   }
   body .navbar .logo p {
     font-size: 20px;
+  }
+  body .navbar .nav {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    background: #770381;
+    top: 45px;
+    left: 0px;
+    padding: 10px;
+    display: none;
+  }
+  body .navbar .nav a {
+    margin-top: 10px;
+  }
+  body .navbar i {
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
   }
   body #hero #photo img {
     width: 150px;
@@ -265,7 +289,7 @@ body #social_media a p {
     border: 8px solid white;
   }
   body #hero .about #name {
-    font-size: 25px;
+    font-size: 22px;
   }
   body #hero .about p {
     font-size: 18px;

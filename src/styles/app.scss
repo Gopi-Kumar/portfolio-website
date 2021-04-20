@@ -27,6 +27,9 @@ body{
                 text-decoration: none;
             }
         }
+        i{
+            display:none;
+        }
     }
 
     //Hero section
@@ -242,6 +245,9 @@ body{
         }
     }
     @media(max-width : 500px){
+        body{
+           display:none;
+        }
         #social_media{
             p{
                 display:none;
@@ -250,6 +256,26 @@ body{
         .navbar{
             .logo p{
                 font-size: 20px;
+            }
+            .nav{
+                position:absolute;
+                flex-direction: column;
+                width:100%;
+                background:$main-bg-color;
+                top:45px;
+                left:0px;
+                padding:10px;
+                display:none;
+                a{
+                   margin-top:10px ;
+                }
+                
+
+            }
+            i{
+                display: block;
+                font-size: 25px;
+                cursor: pointer;
             }
         }
         #hero{
@@ -262,7 +288,7 @@ body{
             }
             .about{
                 #name{
-                    font-size: 25px;
+                    font-size: 22px;
                 }
                 p{
                     font-size: 18px;
