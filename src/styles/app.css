@@ -211,6 +211,15 @@ body #message form .info .name, body #message form .info .email {
 }
 body #message form .info input {
   width: 200px;
+  height: 26px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+}
+body #message form .info input:focus {
+  border: 2px solid #ea00ff;
+  box-shadow: 0.1px 0.1px 5px 0px #ea00ff;
+  outline: #770381;
 }
 body #message form .message {
   display: flex;
@@ -218,6 +227,14 @@ body #message form .message {
 }
 body #message form .message textarea {
   width: 400px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+}
+body #message form .message textarea:focus {
+  border: 2px solid #ea00ff;
+  box-shadow: 0.1px 0.1px 5px 0px #ea00ff;
+  outline: #770381;
 }
 body #message form .button {
   background: #770381;

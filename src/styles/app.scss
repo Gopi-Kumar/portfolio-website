@@ -197,6 +197,16 @@ body{
                 }
                 input{
                     width: 200px;
+                    height:26px;
+                    border-radius:5px;
+                    border:0;
+                    outline:0;
+                    &:focus{
+                        border:2px solid $secondry-bg-color;
+                        box-shadow: 0.1px 0.1px 5px 0px $secondry-bg-color;
+                        outline:$main-bg-color;
+
+                    }
                 }
                
             }
@@ -204,6 +214,15 @@ body{
                 @include display_as_column;
                 textarea{
                     width:400px;
+                    border-radius:5px;
+                    border:0;
+                    outline:0;
+                    &:focus{
+                        border:2px solid $secondry-bg-color;
+                        box-shadow: 0.1px 0.1px 5px 0px $secondry-bg-color;
+                        outline:$main-bg-color;
+
+                    }
                 }
                
             }
@@ -269,8 +288,6 @@ body{
                 a{
                    margin-top:10px ;
                 }
-                
-
             }
             i{
                 display: block;
@@ -309,7 +326,6 @@ body{
                                 li{
                                     display:none;
                                 }
-
                             }
                         }
                     }
