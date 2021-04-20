@@ -2,8 +2,11 @@
 
 @import './library.scss';
 
+@import './smallScreen.scss';
+
 body{
     width: 100%;
+
     //navbar section
     .navbar{
         position: sticky;
@@ -184,7 +187,7 @@ body{
             @include display_as_column_center;
             .info{
                 @include display_as_row_center;
-
+                flex-wrap: wrap;
                 .name, .email{
                     @include display_as_column;
                     margin:5px;
@@ -238,6 +241,97 @@ body{
             }
         }
     }
+    @media(max-width : 500px){
+        #social_media{
+            p{
+                display:none;
+            }
+        }
+        .navbar{
+            .logo p{
+                font-size: 20px;
+            }
+        }
+        #hero{
+            #photo{
+                img{
+                    width:150px;
+                    height:150px;
+                    border: 8px solid white;
+                }
+            }
+            .about{
+                #name{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+        #skills{
+            .skills_header{
+                font-size: 25px;
+            }
+            #hardSkills{
+                #pl{
+                    .plSkill{
+                        margin:0.5rem;
+                        padding:0.5rem;
+                        #secondry{
+                            span{
+                                li{
+                                    display:none;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #projects{
+            section{
+                .project{
+                    text-align: center;
+                    flex-wrap: wrap;
+                    width:90vw;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content:center;
+                    .info{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        a{
+                            margin:10px;
+                        }
+                    }
+                }
+            }
+        }
+        #message{
+            width:100vw;
+            h1{
+                font-size: 25px;
+            }
+            form{
+                width: 100vw;
+                .info{
+                    .name, .email{
+                        width: 300px;
+                    }
+                }
+                .message{
+                    textarea{
+                        width:300px
+                    }
+                }
+            }
+        }
+        
+    }
 }
 
 .fixedNavbar{
@@ -246,3 +340,4 @@ body{
     padding:0.5rem;
     display:none;
 }
+
