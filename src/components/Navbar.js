@@ -16,17 +16,21 @@ const Navbar = ()=>{
     }
 
     return(
-        <div className="fixedNavbar navbar">
-            <div className="logo">
-                <p>gkkaushik</p>
-            </div>
-            <div className="nav">
-                <a href="#hero">Home</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#message">Hire Me</a>
-            </div>
-            <i className="fa fa-bars" onClick={(e)=>handleddButton(e)}></i>
+        <div className="navbar-section">
+            <div className="logo"><p>gkkaushik</p></div>
+            <div className="navbar">
+                <div className="items">
+                        <a href="#" className="navbar-item">Home</a>
+                        <a href="#skills" className="navbar-item">Skills</a>
+                        <a href="#projects" className="navbar-item">Projects</a>
+                        <a href="#message" className="navbar-item">Message me</a>
+                </div>
+                <div className="dropdown">
+                    <div className="stick"></div>
+                    <div className="stick"></div>
+                    <div className="stick"></div>
+                </div>
+            </div>   
         </div>
     )
 }

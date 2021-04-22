@@ -1,34 +1,29 @@
 body {
   width: 100%;
 }
-body .navbar {
+body .navbar-section {
+  border-bottom: 4px solid white;
+  box-shadow: 0px 2px 2px #707070;
   position: sticky;
-  position: -webkit-sticky;
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: #770381;
-  color: white;
-  padding: 0.5rem;
+  background-color: #770381;
 }
-body .navbar .logo p {
+body .navbar-section .logo {
+  color: white;
   font-size: 25px;
 }
-body .navbar .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+body .navbar-section .navbar {
+  background-color: #770381;
 }
-body .navbar .nav a {
-  font-size: 15px;
+body .navbar-section .navbar a {
   color: white;
-  margin-right: 15px;
-  text-decoration: none;
 }
-body .navbar i {
-  display: none;
+body .navbar-section .navbar a:hover {
+  background: #ea00ff;
 }
 body #hero {
   display: flex;
@@ -56,7 +51,7 @@ body #hero .about #pos {
 }
 body #skills {
   background: #770381;
-  padding: 1rem;
+  padding: 3rem 1rem;
 }
 body #skills h1 {
   text-align: center;
@@ -123,6 +118,7 @@ body #skills #softSkills li {
   margin: 0.5rem 1rem;
 }
 body #projects {
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -181,7 +177,7 @@ body #message {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem 1rem;
 }
 body #message h1 {
   text-align: center;
@@ -272,33 +268,19 @@ body #social_media a i {
 body #social_media a p {
   font-size: 9px;
 }
-@media (max-width: 500px) {
+@media (max-width: 740px) {
   body body {
     display: none;
   }
   body #social_media p {
     display: none;
   }
-  body .navbar .logo p {
-    font-size: 20px;
-  }
-  body .navbar .nav {
-    position: absolute;
-    flex-direction: column;
-    width: 100%;
+  body .navbar-section .items {
+    width: 300px;
     background: #770381;
-    top: 45px;
-    left: 0px;
-    padding: 10px;
-    display: none;
   }
-  body .navbar .nav a {
-    margin-top: 10px;
-  }
-  body .navbar i {
-    display: block;
-    font-size: 25px;
-    cursor: pointer;
+  body .navbar-section .dropdown .stick {
+    background: white !important;
   }
   body #hero #photo img {
     width: 150px;
@@ -353,13 +335,6 @@ body #social_media a p {
   body #message form .message textarea {
     width: 300px;
   }
-}
-
-.fixedNavbar {
-  position: fixed;
-  top: 0;
-  padding: 0.5rem;
-  display: none;
 }
 
 /*# sourceMappingURL=app.css.map */

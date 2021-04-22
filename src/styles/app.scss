@@ -2,34 +2,32 @@
 
 @import './library.scss';
 
-@import './smallScreen.scss';
 
 body{
     width: 100%;
 
     //navbar section
-    .navbar{
-        position: sticky;
-        position:-webkit-sticky;
-        @include display_as_row_space_between;    
-        background: $main-bg-color;
-        color:$white;
-        padding:0.5rem;
-        .logo p{
-            font-size: 25px;
-        }
-        .nav{
-            @include display_as_row_end;
-            a{
-                font-size: 15px;
-                color:$white;
-                margin-right:15px;
-                text-decoration: none;
-            }
-        }
-        i{
-            display:none;
-        }
+    .navbar-section{
+        border-bottom:4px solid white;
+        box-shadow: 0px 2px 2px rgb(112, 112, 112);
+        position:sticky;
+        top:0;
+        @include display_as_row_space_between;
+       background-color: $main-bg-color;
+       .logo{
+           color:white;
+           font-size: 25px;
+       }
+       .navbar{
+         background-color: $main-bg-color;
+         a{
+             color:white;
+             &:hover{
+                 background:$secondry-bg-color;
+             }
+         }
+        
+       }
     }
 
     //Hero section
@@ -61,7 +59,7 @@ body{
     //Skills section
     #skills{
         background : $main-bg-color;
-        padding:1rem;
+        padding:3rem 1rem;
         h1{
             text-align: center;
             color:$white;
@@ -124,6 +122,7 @@ body{
 
     //Project section
     #projects{
+        padding:3rem 1rem;
         @include display_as_row_center;
         flex-wrap: wrap;
         background:$light-gray;
@@ -177,7 +176,7 @@ body{
     //Message us section
     #message{
         @include display_as_column_center;
-        padding:2rem;
+        padding:3rem 1rem;
         h1{
             text-align: center;
         }
@@ -263,7 +262,7 @@ body{
             }
         }
     }
-    @media(max-width : 500px){
+    @media(max-width : 740px){
         body{
            display:none;
         }
@@ -272,29 +271,19 @@ body{
                 display:none;
             }
         }
-        .navbar{
-            .logo p{
-                font-size: 20px;
-            }
-            .nav{
-                position:absolute;
-                flex-direction: column;
-                width:100%;
+        .navbar-section{
+            
+            .items{
+                width:300px;
                 background:$main-bg-color;
-                top:45px;
-                left:0px;
-                padding:10px;
-                display:none;
-                a{
-                   margin-top:10px ;
-                }
             }
-            i{
-                display: block;
-                font-size: 25px;
-                cursor: pointer;
+            .dropdown {
+                .stick{
+                    background:white !important;
+            }
             }
         }
+       
         #hero{
             #photo{
                 img{
@@ -376,10 +365,5 @@ body{
     }
 }
 
-.fixedNavbar{
-    position: fixed;
-    top:0;
-    padding:0.5rem;
-    display:none;
-}
+
 
