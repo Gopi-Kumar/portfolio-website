@@ -2,6 +2,7 @@ import snakeGame from '../images/snake.jpg'
 import todo from '../images/todo.PNG'
 import Alarm from '../images/alarm.PNG'
 import ofs from '../images/file.PNG'
+import corona from '../images/corona.PNG'
 
 const Project =  () => {
     const projects = [
@@ -12,12 +13,13 @@ const Project =  () => {
             technology : "MERN Stack",
             address: "https://share-link-app.herokuapp.com"
         },
-        // {
-        //     name : "Covid 19 Tracker",
-        //     thumbnail : "",
-        //     technology : "Angular",
-        //     address : ""
-        // },
+        {
+            name : "Covid 19 Tracker",
+            thumbnail : "",
+            technology : "Angular & Typescript",
+            address : "https://coronacasestracker.netlify.app/",
+            thumbnail : corona
+        },
         {
             name : "Snake Game",
             about : "A snake game is a game which founded in Nokia's older version cellphone",

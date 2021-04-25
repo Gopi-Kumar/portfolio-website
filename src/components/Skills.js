@@ -17,6 +17,7 @@ import sassLogo from '../images/sass.png'
 import sqlLogo from '../images/sql.png'
 import vsLogo from '../images/vs.png'
 import wordLogo from '../images/word.png'
+import ts from '../images/ts.png'
 
 
 const Skills = () => {
@@ -74,6 +75,10 @@ const Skills = () => {
                     {
                         src : mongoLogo,
                         name : "MongoDB"
+                    },
+                    {
+                        src : ts,
+                        name : "TypeScript"
                     }
                 ]
             },
