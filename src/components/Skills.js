@@ -62,7 +62,8 @@ const Skills = () => {
                     {
                         src : nodeLogo,
                         name : "Nodejs"
-                    }
+                    },
+                   
                  ]
             },
             {
@@ -76,10 +77,7 @@ const Skills = () => {
                         src : mongoLogo,
                         name : "MongoDB"
                     },
-                    {
-                        src : ts,
-                        name : "TypeScript"
-                    }
+                  
                 ]
             },
             {
@@ -96,6 +94,10 @@ const Skills = () => {
                     {
                         src : javaLogo,
                         name : "Java"
+                    },
+                    {
+                        src : ts,
+                        name : "TypeScript"
                     }
 
                     ]

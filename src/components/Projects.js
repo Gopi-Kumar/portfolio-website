@@ -15,10 +15,10 @@ const Project =  () => {
         },
         {
             name : "Covid 19 Tracker",
-            thumbnail : "",
+            thumbnail :corona,
             technology : "Angular & Typescript",
             address : "https://coronacasestracker.netlify.app/",
-            thumbnail : corona
+            about : "A covid-19 cases tracker where you can know total confirmed, deatch and recovered cases of covid-19." 
         },
         {
             name : "Snake Game",
