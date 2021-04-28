@@ -1,5 +1,41 @@
 body {
+  overflow-x: hidden;
   width: 100%;
+}
+body .loader {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #ea00ff;
+  z-index: 12;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+body .loader .loader_circle {
+  margin: auto;
+  margin-top: 40vh;
+  border: 16px solid white;
+  border-radius: 50%;
+  border-top: 16px solid #770381;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body .loader .loader_line {
+  color: white;
+  text-align: center;
+  margin: 1rem;
 }
 body .navbar-section {
   border-bottom: 4px solid white;

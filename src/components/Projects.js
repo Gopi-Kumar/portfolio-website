@@ -3,7 +3,7 @@ import todo from '../images/todo.PNG'
 import Alarm from '../images/alarm.PNG'
 import ofs from '../images/file.PNG'
 import corona from '../images/corona.PNG'
-
+import cj from '../images/cj.PNG'
 const Project =  () => {
     const projects = [
         {
@@ -36,17 +36,18 @@ const Project =  () => {
         },
         {
             name : "Alarm",
-            about : "after setting your work time, Alarm make you productive by remiding work on time",
+            about : "after setting your work time, Alarm make you productive by reminding work on time",
             thumbnail : Alarm,
             technology : "Html, Css & Javascript",
             address : "http://alarm.rf.gd"
         }
-        // ,{
-        //     name : "Image Website",
-        //     thumbnail : "",
-        //     technology : "Html, Css, Javascript, PHP & MongoDB",
-        //     address : "http://chiranjivseyes.rf.gd"
-        // }
+        ,{
+            name : "Image Website",
+            thumbnail : cj,
+            technology : "Html, Css, Javascript, PHP & MongoDB",
+            address : "http://chiranjivseyes.rf.gd",
+            about : "Beautiful full photos clicked by chiranjiv sharma, where you can download and use photo for free."
+        }
     ]
     return (
         <div id="projects">
