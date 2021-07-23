@@ -6,7 +6,7 @@ body .loader {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-color: #ea00ff;
+  background-color: #58ffb4;
   z-index: 12;
   overflow: hidden;
   justify-content: center;
@@ -17,7 +17,7 @@ body .loader .loader_circle {
   margin-top: 40vh;
   border: 16px solid white;
   border-radius: 50%;
-  border-top: 16px solid #770381;
+  border-top: 16px solid #00203FFF;
   width: 120px;
   height: 120px;
   -webkit-animation: spin 2s linear infinite;
@@ -46,7 +46,7 @@ body .navbar-section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #770381;
+  background-color: #00203FFF;
 }
 body .navbar-section .logo {
   color: white;
@@ -57,13 +57,13 @@ body .navbar-section .logo img {
   margin-left: 15px;
 }
 body .navbar-section .navbar {
-  background-color: #770381;
+  background-color: #00203FFF;
 }
 body .navbar-section .navbar a {
   color: white;
 }
 body .navbar-section .navbar a:hover {
-  background: #ea00ff;
+  background: #58ffb4;
 }
 body #hero {
   display: flex;
@@ -87,10 +87,10 @@ body #hero .about #name {
   font-size: 30px;
 }
 body #hero .about #pos {
-  color: #770381;
+  color: #00203FFF;
 }
 body #skills {
-  background: #770381;
+  background: #00203FFF;
   padding: 3rem 1rem;
 }
 body #skills h1 {
@@ -181,7 +181,7 @@ body #projects section .project {
   padding: 1rem;
   margin: 2rem;
   width: 500px;
-  background: #770381;
+  background: #00203FFF;
   color: white;
   border: 13px solid white;
   display: flex;
@@ -194,7 +194,7 @@ body #projects section .project .info .name {
   text-decoration: underline;
 }
 body #projects section .project .info .technology {
-  background: #ea00ff;
+  background: #58ffb4;
   padding: 0.5rem 1rem;
   margin: 1rem;
   font-size: 15px;
@@ -226,7 +226,7 @@ body #message form {
   width: 600px;
   margin: 1rem;
   padding: 2rem;
-  border: 3px solid #770381;
+  border: 3px solid #00203FFF;
   background: #e7e7e7;
   display: flex;
   flex-direction: column;
@@ -253,9 +253,9 @@ body #message form .info input {
   outline: 0;
 }
 body #message form .info input:focus {
-  border: 2px solid #ea00ff;
-  box-shadow: 0.1px 0.1px 5px 0px #ea00ff;
-  outline: #770381;
+  border: 2px solid #58ffb4;
+  box-shadow: 0.1px 0.1px 5px 0px #58ffb4;
+  outline: #00203FFF;
 }
 body #message form .message {
   display: flex;
@@ -268,12 +268,12 @@ body #message form .message textarea {
   outline: 0;
 }
 body #message form .message textarea:focus {
-  border: 2px solid #ea00ff;
-  box-shadow: 0.1px 0.1px 5px 0px #ea00ff;
-  outline: #770381;
+  border: 2px solid #58ffb4;
+  box-shadow: 0.1px 0.1px 5px 0px #58ffb4;
+  outline: #00203FFF;
 }
 body #message form .button {
-  background: #770381;
+  background: #00203FFF;
   color: white;
   border: none;
   outline: none;
@@ -281,7 +281,7 @@ body #message form .button {
   padding: 0.5rem 1rem;
 }
 body #social_media {
-  background-color: #ea00ff;
+  background-color: #58ffb4;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -317,7 +317,7 @@ body #social_media a p {
   }
   body .navbar-section .items {
     width: 300px;
-    background: #770381;
+    background: #00203FFF;
   }
   body .navbar-section .dropdown .stick {
     background: white !important;
