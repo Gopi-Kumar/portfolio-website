@@ -1,3 +1,4 @@
+import logo from '../images/logo.png'
 const Navbar = ()=>{
     // const handleddButton = (e)=>{
     //     const ddButton = e.target;
@@ -17,7 +18,9 @@ const Navbar = ()=>{
 
     return(
         <div className="navbar-section">
-            <div className="logo"><p>gkkaushik</p></div>
+            <div className="logo">
+                <img src={logo} alt="Gopi Kumar Kaushik"/>
+            </div>
             <div className="navbar">
                 <div className="items">
                         <a href="#skills" className="navbar-item">Home</a>

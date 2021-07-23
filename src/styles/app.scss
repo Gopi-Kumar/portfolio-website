@@ -54,6 +54,10 @@ body{
        .logo{
            color:white;
            font-size: 25px;
+            img{
+                width:100px;
+                margin-left: 15px;
+            }
        }
        .navbar{
          background-color: $main-bg-color;

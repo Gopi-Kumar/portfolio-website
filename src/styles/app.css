@@ -52,6 +52,10 @@ body .navbar-section .logo {
   color: white;
   font-size: 25px;
 }
+body .navbar-section .logo img {
+  width: 100px;
+  margin-left: 15px;
+}
 body .navbar-section .navbar {
   background-color: #770381;
 }
@@ -201,7 +205,7 @@ body #projects section .project .info .technology span {
 body #projects section .project .info a {
   text-decoration: none;
   color: white;
-  background: #4f87ff;
+  background: #125dff;
   padding: 0.2rem 1rem;
   border-radius: 10px;
 }

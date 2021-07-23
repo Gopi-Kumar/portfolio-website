@@ -1,9 +1,7 @@
 import snakeGame from '../images/snake.jpg'
-import todo from '../images/todo.PNG'
-import Alarm from '../images/alarm.PNG'
 import ofs from '../images/file.PNG'
-import corona from '../images/corona.PNG'
 import cj from '../images/cj.PNG'
+import sf from '../images/sf.PNG'
 const Project =  () => {
     const projects = [
         {
@@ -11,14 +9,14 @@ const Project =  () => {
             about : "Online file sharing web portal where you can share your file by uploading. after uploading you will get a link and send this link to that person which person you want to share",
             thumbnail : ofs,
             technology : "MERN Stack",
-            address: "https://share-link-app.herokuapp.com"
+            address: "https://share-link-app.netlify.com"
         },
         {
-            name : "Covid 19 Tracker",
-            thumbnail :corona,
-            technology : "Angular & Typescript",
-            address : "https://coronacasestracker.netlify.app/",
-            about : "A covid-19 cases tracker where you can know total confirmed, deatch and recovered cases of covid-19." 
+            name : "Student Friend",
+            about : "A students friend who helps students to manage his routine and much more thing so student can focus on study.",
+            thumbnail : sf,
+            technology : "Html, Css & Javascript",
+            address: "https://student-friend.netlify.com"
         },
         {
             name : "Snake Game",
@@ -28,20 +26,6 @@ const Project =  () => {
             address  :"http://snakegame.rf.gd"
         },
         {
-            name : "Todo",
-            about : "Todo help to manage your works efficiently, just you have to write what you have to do ? ",
-            technology : "React & Redux",
-            thumbnail : todo,
-            address :"https://todobygkkaushik.netlify.com"
-        },
-        {
-            name : "Alarm",
-            about : "after setting your work time, Alarm make you productive by reminding work on time",
-            thumbnail : Alarm,
-            technology : "Html, Css & Javascript",
-            address : "http://alarm.rf.gd"
-        }
-        ,{
             name : "Image Website",
             thumbnail : cj,
             technology : "Html, Css, Javascript, PHP & MongoDB",
@@ -61,7 +45,7 @@ const Project =  () => {
                                 <p className="name">{p.name}</p>
                                 <div className="about">{p.about}</div>
                                 <p className="technology">Technology Used : <span>{p.technology}</span></p>
-                                <a href={p.address}>Open {p.name}</a>
+                                <a target="blank" href={p.address}>Open {p.name}</a>
                             </div>
                             <div className="thumbnail">
                                 <img src={p.thumbnail} alt=""/>
