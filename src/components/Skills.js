@@ -18,6 +18,7 @@ import sqlLogo from '../images/sql.png'
 import vsLogo from '../images/vs.png'
 import wordLogo from '../images/word.png'
 import ts from '../images/ts.png'
+import figma from '../images/figma.png'
 
 
 const Skills = () => {
@@ -127,6 +128,10 @@ const Skills = () => {
                     {
                         src : photoshopLogo,
                         name : "Adobe Photoshop"
+                    },
+                    {
+                        src : figma, 
+                        name : "Figma"
                     }
                 ]
 
