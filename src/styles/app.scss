@@ -2,6 +2,7 @@
 
 @import './library.scss';
 
+@import './smallScreen.scss';
 
 body{
     overflow-x:hidden;
@@ -55,7 +56,7 @@ body{
            color:white;
            font-size: 25px;
             img{
-                width:100px;
+                width:50px;
                 margin-left: 15px;
             }
        }
@@ -221,7 +222,7 @@ body{
         h1{
             text-align: center;
         }
-        form{
+        .message__form{
             width:600px;
             margin:1rem;
             padding:2rem;

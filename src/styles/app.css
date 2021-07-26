@@ -1,3 +1,16 @@
+@media only screen and (max-width: 640px) {
+  body #message {
+    padding: 2rem 0rem 2rem 0rem !important;
+  }
+  body #message .message__form {
+    width: 100% !important;
+    margin: 1rem 0rem 1rem 0rem !important;
+    padding: 2rem 0rem 2rem 0rem !important;
+  }
+  body #message .message__form .message textarea {
+    width: 250px !important;
+  }
+}
 body {
   overflow-x: hidden;
   width: 100%;
@@ -53,7 +66,7 @@ body .navbar-section .logo {
   font-size: 25px;
 }
 body .navbar-section .logo img {
-  width: 100px;
+  width: 50px;
   margin-left: 15px;
 }
 body .navbar-section .navbar {
@@ -222,7 +235,7 @@ body #message {
 body #message h1 {
   text-align: center;
 }
-body #message form {
+body #message .message__form {
   width: 600px;
   margin: 1rem;
   padding: 2rem;
@@ -233,46 +246,46 @@ body #message form {
   justify-content: center;
   align-items: center;
 }
-body #message form .info {
+body #message .message__form .info {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-body #message form .info .name, body #message form .info .email {
+body #message .message__form .info .name, body #message .message__form .info .email {
   display: flex;
   flex-direction: column;
   margin: 5px;
 }
-body #message form .info input {
+body #message .message__form .info input {
   width: 200px;
   height: 26px;
   border-radius: 5px;
   border: 0;
   outline: 0;
 }
-body #message form .info input:focus {
+body #message .message__form .info input:focus {
   border: 2px solid #58ffb4;
   box-shadow: 0.1px 0.1px 5px 0px #58ffb4;
   outline: #00203FFF;
 }
-body #message form .message {
+body #message .message__form .message {
   display: flex;
   flex-direction: column;
 }
-body #message form .message textarea {
+body #message .message__form .message textarea {
   width: 400px;
   border-radius: 5px;
   border: 0;
   outline: 0;
 }
-body #message form .message textarea:focus {
+body #message .message__form .message textarea:focus {
   border: 2px solid #58ffb4;
   box-shadow: 0.1px 0.1px 5px 0px #58ffb4;
   outline: #00203FFF;
 }
-body #message form .button {
+body #message .message__form .button {
   background: #00203FFF;
   color: white;
   border: none;
