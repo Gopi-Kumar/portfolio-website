@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 function Message() {
-    // let endpoint = "http://localhost:3002";
-    let endpoint = "https://letter-box.netlify.com"
+    let endpoint = "http://localhost:3002";
+    // let endpoint = "https://letter-box.netlify.com"
     let [name,setName] = useState("");
     let [message,setMessage] = useState("");
     let [email,setEmail] = useState("");

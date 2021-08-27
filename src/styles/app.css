@@ -19,7 +19,7 @@ body .loader {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-color: #58ffb4;
+  background-color: #770381;
   z-index: 12;
   overflow: hidden;
   justify-content: center;
@@ -76,7 +76,7 @@ body .navbar-section .navbar a {
   color: white;
 }
 body .navbar-section .navbar a:hover {
-  background: #58ffb4;
+  background: #770381;
 }
 body #hero {
   display: flex;
@@ -85,7 +85,7 @@ body #hero {
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background: #e7e7e7;
+  background: #cccaca;
 }
 body #hero img {
   border-radius: 50%;
@@ -120,7 +120,7 @@ body #skills #hardSkills #pl {
   flex-wrap: wrap;
 }
 body #skills #hardSkills #pl .plSkill {
-  background: #e7e7e7;
+  background: #cccaca;
   padding: 1rem;
   margin: 1.5rem;
 }
@@ -177,7 +177,7 @@ body #projects {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background: #e7e7e7;
+  background: #cccaca;
 }
 body #projects h1 {
   text-align: center;
@@ -207,7 +207,7 @@ body #projects section .project .info .name {
   text-decoration: underline;
 }
 body #projects section .project .info .technology {
-  background: #58ffb4;
+  background: #770381;
   padding: 0.5rem 1rem;
   margin: 1rem;
   font-size: 15px;
@@ -240,7 +240,7 @@ body #message .message__form {
   margin: 1rem;
   padding: 2rem;
   border: 3px solid #00203FFF;
-  background: #e7e7e7;
+  background: #cccaca;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,8 +266,8 @@ body #message .message__form .info input {
   outline: 0;
 }
 body #message .message__form .info input:focus {
-  border: 2px solid #58ffb4;
-  box-shadow: 0.1px 0.1px 5px 0px #58ffb4;
+  border: 2px solid #770381;
+  box-shadow: 0.1px 0.1px 5px 0px #770381;
   outline: #00203FFF;
 }
 body #message .message__form .message {
@@ -281,8 +281,8 @@ body #message .message__form .message textarea {
   outline: 0;
 }
 body #message .message__form .message textarea:focus {
-  border: 2px solid #58ffb4;
-  box-shadow: 0.1px 0.1px 5px 0px #58ffb4;
+  border: 2px solid #770381;
+  box-shadow: 0.1px 0.1px 5px 0px #770381;
   outline: #00203FFF;
 }
 body #message .message__form .button {
@@ -294,7 +294,7 @@ body #message .message__form .button {
   padding: 0.5rem 1rem;
 }
 body #social_media {
-  background-color: #58ffb4;
+  background-color: #770381;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
