@@ -1,0 +1,40 @@
+@import './utills.scss';
+.hero{
+    @include display_as_row();
+    section{
+        height:80vh;
+        // background-color: red;
+        flex:1;
+        color:$primary_text;
+        font-size: 25px;
+        @include  display_as_column_center();
+        z-index: 34;
+        text-shadow: 2px 2px 5px black;
+        &:nth-child(1){
+            align-items: flex-start;
+            padding: 20px 20px 0px 80px;
+        }
+        &:nth-child(2){
+           align-items:flex-start;
+           margin-left:100px;
+        }
+        .designation{
+            font-size: 40px;
+            span{
+                color:$designation_text;
+                font-weight: 500;
+            }
+        }
+        .img_container{
+            width:300px;
+            height:300px;
+            overflow:hidden;
+            border:12px solid $navbar_profile_pic_border;
+            border-radius: 50%;
+            box-shadow: 1px 1px 10px 5px rgb(0, 0, 0);
+            img{
+                width:300px;
+            }
+        }
+    }
+}

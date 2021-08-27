@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+body .home {
+  background: #000112;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body .home .triangle_at_corner {
+  position: absolute;
+  width: 100vw;
+  height: 500px;
+  background: #020421;
+  bottom: -300px;
+  transform: rotate(25deg);
+  left: -200px;
+}
+
+/*# sourceMappingURL=Home.css.map */

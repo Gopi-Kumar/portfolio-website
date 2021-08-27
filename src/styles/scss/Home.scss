@@ -1,0 +1,22 @@
+@import './utills.scss';
+
+body{
+    overflow: hidden;
+    .home{
+        background:$dark_primary_background;
+        width: 100vw;
+        height: 100vh;
+        // background:url('../../images/home_background.png');
+        // background-size: cover;
+        @include  display_as_column();
+        .triangle_at_corner{
+            position: absolute;
+            width:100vw;
+            height:500px;
+            background:$primary_background;
+            bottom: -300px;
+            transform:rotate(25deg);
+            left:-200px;
+        }
+    }
+}

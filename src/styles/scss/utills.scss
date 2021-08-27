@@ -1,4 +1,11 @@
-@mixin displayCenter(){
+@import 'color.scss';
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    // font-family: 'Heebo', sans-serif;
+}
+@mixin display_center(){
     display: flex;
     align-items: center;
     justify-content: center;
