@@ -1,7 +1,6 @@
 @import './utills.scss';
 .hero{
     @include display_as_row();
-
     section{
         height:80vh;
         // background-color: red;
@@ -34,6 +33,120 @@
             box-shadow: 1px 1px 10px 5px rgb(0, 0, 0);
             img{
                 width:300px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .hero{
+        section{
+            &:nth-child(1){
+                flex:2;
+                padding:40px;
+            }
+            &:nth-child(2){
+                margin-left:0px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:850px){
+    .hero{
+        section{
+            &:nth-child(1){
+                font-size:20px;
+                .designation{
+                    font-size:35px;
+                }
+            }
+            &:nth-child(2){
+                .img_container{
+                    width:250px;
+                    height:250px;
+                    img{
+                        width:250px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:730px){
+    .hero{
+        flex-direction:column-reverse;
+        section{
+            &:nth-child(2){
+                @include display_as_row_center();
+                padding:30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px){
+    .hero{
+        section{
+            
+            &:nth-child(1){
+                // padding:10px;
+                font-size:18px;
+                .designation{
+                    font-size:30px;
+                }
+            }
+            &:nth-child(2){
+                padding:20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:400px){
+    .hero{
+        section{
+            
+            &:nth-child(1){
+                padding:15px;
+                
+                font-size:18px;
+                .designation{
+                    font-size:25px;
+                }
+            }
+            &:nth-child(2){
+                padding:40px;
+                .img_container{
+                    width: 200px;
+                    height:200px;
+                    img{
+                        width:200px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:300px){
+    .hero{
+        section{
+            
+            &:nth-child(1){
+                padding:15px;
+                
+                font-size:18px;
+                .designation{
+                    font-size:20px;
+                }
+            }
+            &:nth-child(2){
+                padding:40px;
+                .img_container{
+                    width: 200px;
+                    height:200px;
+                    img{
+                        width:200px;
+                    }
+                }
             }
         }
     }

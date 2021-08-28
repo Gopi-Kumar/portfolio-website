@@ -26,3 +26,12 @@ body{
         }
     }
 }
+
+@media only screen and (max-width:800px){
+    .home_background{
+        .triangle_at_corner{
+            top: 500px;
+            left:0;
+        }
+    }
+}
