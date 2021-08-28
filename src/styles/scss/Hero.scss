@@ -1,6 +1,7 @@
 @import './utills.scss';
 .hero{
     @include display_as_row();
+
     section{
         height:80vh;
         // background-color: red;
@@ -8,7 +9,6 @@
         color:$primary_text;
         font-size: 25px;
         @include  display_as_column_center();
-        z-index: 34;
         text-shadow: 2px 2px 5px black;
         &:nth-child(1){
             align-items: flex-start;

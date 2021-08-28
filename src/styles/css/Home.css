@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 * {
   margin: 0;
   padding: 0;
@@ -8,17 +9,23 @@ body {
   overflow: hidden;
 }
 body .home {
-  background: #000112;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
-body .home .triangle_at_corner {
+body .home .home_background {
+  position: absolute;
+  background: #000112;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+body .home .home_background .triangle_at_corner {
   position: absolute;
   width: 100vw;
   height: 500px;
-  background: #020421;
+  background: #02063f;
   bottom: -300px;
   transform: rotate(25deg);
   left: -200px;

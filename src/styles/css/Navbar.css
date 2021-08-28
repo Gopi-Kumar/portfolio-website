@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +14,19 @@
   color: white;
 }
 .navbar .name {
-  font-size: 30px;
+  font-size: 28px;
   padding: 20px;
+  font-weight: 400;
+}
+.navbar button {
+  border: none;
+  outline: none;
+  display: none;
+  background: transparent;
+  color: white;
+}
+.navbar button i {
+  font-size: 25px;
 }
 .navbar nav {
   display: flex;
@@ -34,6 +46,31 @@
 }
 .navbar nav .active {
   border-bottom: 3px solid #FF008A;
+}
+
+@media only screen and (max-width: 835px) {
+  .navbar nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    background: #000112;
+    border-right: 5px solid black;
+    box-shadow: 0px 2px 10px 2px #116FC6;
+  }
+  .navbar button {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .navbar .name {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=Navbar.css.map */

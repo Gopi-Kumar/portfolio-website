@@ -6,9 +6,20 @@
     // justify-content:center;
     color:$primary_text;
     .name{
-        font-size: 30px;
+        font-size: 28px;
         padding:20px;
-        // font-weight: lighter;
+        font-weight: 400;
+    }
+    button{
+        border:none;
+        outline:none;
+        display:none;
+        background:transparent;
+        color:$primary_text;
+        i{
+            font-size:25px;
+            
+        }
     }
     nav{
         @include display_as_row_center();
@@ -26,6 +37,36 @@
         }
         .active{
             border-bottom:3px solid $navbar_profile_pic_border;
+        }
+    }
+}
+
+@media only screen and (max-width:835px){
+    .navbar{
+        nav{
+            display:none;
+            position:absolute;
+            top:0;
+            left:0;
+            flex-direction:column;
+            width:250px;
+            height:100vh;
+            background:$dark_primary_background;
+            border-right:5px solid black;
+            box-shadow:0px 2px 10px 2px $designation_text;
+            
+        }
+        button{
+            display:block;
+            padding:20px;
+            cursor:pointer;
+        }
+    }
+}
+@media only screen and (max-width:370px){
+    .navbar{
+        .name{
+            font-size:20px;
         }
     }
 }
