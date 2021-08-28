@@ -1,0 +1,111 @@
+@import './utills.scss';
+
+.skills{
+    overflow:scroll;
+    overflow-x: hidden;
+    background:$primary_background;
+    width:100vw;
+    height:100vh;
+    .skills_container{
+        color:$primary_text;
+        @include display_as_row_center();
+        flex-wrap: wrap;
+        .skill_container{
+            width:28vw;
+            height:280px;
+            margin:10px;
+            background:$dark_primary_background;
+            @include display_as_column_center();
+            .skill_primary{
+                text-align: center;
+                font-size: 20px;
+                color:$navbar_profile_pic_border;
+                padding:10px;
+            }
+            .skill_secondry{
+                @include display_as_row_center();
+                width:300px;
+                flex-wrap:wrap;
+                p{
+                    @include display_as_row_center();
+                    background:$primary_background;
+                    text-shadow: 2px 2px 5px $secondry_text;
+                    padding:3px 20px;
+                    margin:5px;
+                    border-radius:3px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width:1065px){
+    .skills{   
+
+        .skills_container{
+
+            .skill_container{
+                width:40vw;
+            }
+        }
+    }
+}
+@media only screen and (max-width:740px){
+    .skills{
+        .skills_container{
+            .skill_container{
+                width:70vw;
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .skills{
+        .skills_container{
+            .skill_container{
+                width:80vw;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:400px){
+    .skills{
+        .skills_container{
+            margin:3px;
+            .skill_container{
+                
+                width:90vw;
+                height:35vh;
+                .skill_primary{
+                    padding:0px;
+                }
+                .skill_secondry{
+                    font-size: 15px;
+                }
+
+            }
+        }
+    }
+}
+@media only screen and (max-width:300px){
+    .skills{
+        .skills_container{
+            .skill_container{
+                
+                width:100vw;
+                height:35vh;
+                margin-bottom:3px;
+
+                .skill_primary{
+                    padding:0px;
+                }
+                .skill_secondry{
+                    font-size: 13px;
+                }
+
+            }
+        }
+    }
+}
