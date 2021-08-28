@@ -14,7 +14,7 @@
   color: white;
 }
 .navbar .name {
-  font-size: 28px;
+  font-size: 20px;
   padding: 20px;
   font-weight: 400;
 }
@@ -44,6 +44,9 @@
 }
 
 @media only screen and (max-width: 835px) {
+  .navbar .name {
+    font-size: 20px;
+  }
   .navbar nav {
     display: none;
     position: absolute;
@@ -60,11 +63,6 @@
     display: block;
     padding: 20px;
     cursor: pointer;
-  }
-}
-@media only screen and (max-width: 370px) {
-  .navbar .name {
-    font-size: 20px;
   }
 }
 @media only screen and (max-width: 300px) {

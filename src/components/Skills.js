@@ -20,6 +20,10 @@ const Skills= () => {
             primary : "Computer Science",
             secondry : ["Operating System","Network and Communication", "DBMS","Compiler Design"]
         },
+        {
+             primary: "Ethical Hacking",
+             secondry : ["XSS", "SQL Injection","Helmet js"]
+        }
        
     ]
     return (
