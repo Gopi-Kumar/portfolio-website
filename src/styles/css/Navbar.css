@@ -68,6 +68,7 @@
 @media only screen and (max-width: 300px) {
   .navbar i {
     padding: 10px;
+    z-index: 23;
   }
 }
 
