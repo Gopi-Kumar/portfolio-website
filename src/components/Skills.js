@@ -1,4 +1,4 @@
-import react from 'react';
+
 import Navbar from './shared/Navbar'
 import '../styles/css/Skills.css'
 
@@ -6,7 +6,7 @@ const Skills= () => {
     let skills = [
         {
             primary : "Full Stack",
-            secondry : ["HTML","CSS","SCSS","Javscript","PHP", "MySql","MERN Stack","React Native","Electron js"]
+            secondry : ["HTML","CSS","SCSS","Javscript","PHP", "MySql","MERN Stack","React Native","Electron js","ejs", "Next.js"]
         },
         {
             primary : "Tools",
@@ -14,14 +14,14 @@ const Skills= () => {
         },
         {
           primary : "Programming Languages",
-          secondry : ["C++","Python","C++ SFML"]
+          secondry : ["C++","Python","Javascript","Go"]
         }, 
         {
             primary : "Computer Science",
             secondry : ["Operating System","Network and Communication", "DBMS","Compiler Design"]
         },
         {
-             primary: "Ethical Hacking",
+             primary: "Cyber Security",
              secondry : ["XSS", "SQL Injection","Helmet js"]
         }
        

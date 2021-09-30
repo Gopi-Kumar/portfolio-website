@@ -1,9 +1,9 @@
 @import './utills.scss';
 .hero{
     @include display_as_row();
+    padding-top:150px;
     section{
-        height:80vh;
-        // background-color: red;
+        // height:700px;
         flex:1;
         color:$primary_text;
         font-size: 25px;
@@ -23,6 +23,14 @@
                 color:$designation_text;
                 font-weight: 500;
             }
+        }
+        .social_media{
+            // background:$primary_background;
+            a{
+                color:$primary_text;
+                padding:6px;
+            }
+
         }
         .img_container{
             width:300px;
@@ -74,6 +82,7 @@
 }
 @media only screen and (max-width:730px){
     .hero{
+        padding-top:0px;
         flex-direction:column-reverse;
         section{
             &:nth-child(2){

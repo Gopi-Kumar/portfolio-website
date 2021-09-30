@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import '../styles/css/contact.css';
 function Message() {
-    let endpoint = "http://localhost:3002";
-    // let endpoint = "https://letter-box.netlify.com"
+    let endpoint = "https://letter-box.heroku.com";
     let [name,setName] = useState("");
     let [message,setMessage] = useState("");
     let [email,setEmail] = useState("");
@@ -28,7 +28,7 @@ function Message() {
         .catch(error => console.log('error', error));
     }
     return (
-        <div id="message">
+        <div className="message">
             <h1>Message Us</h1>
             <div className="message__form">
                 <div className="info">

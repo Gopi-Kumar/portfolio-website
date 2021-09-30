@@ -1,16 +1,13 @@
 @import './utills.scss';
 .navbar{
-    // margin-top: 10px;
     width:100vw;
     @include display_as_row_space_between();
-    // justify-content:center;
     color:$primary_text;
     .name{
         font-size: 20px;
         padding:20px;
         font-weight: 400;
     }
-
     i{
         display:none;
         font-size:25px;
@@ -64,10 +61,7 @@
     }
 }
 @media only screen and (max-width:370px){
-    .navbar{
-        .name{
-        }
-    }
+   
 }
 @media only screen and (max-width:300px){
     .navbar{

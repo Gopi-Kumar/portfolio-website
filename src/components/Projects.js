@@ -39,14 +39,14 @@ const projects = [
 const Project =  () => {
     const [currentProjectIndex, setcurrentProjectIndex] = useState(0)
     const increaseCurrentIndex = ()=>{
-        if(currentProjectIndex == projects.length - 1){
+        if(currentProjectIndex === projects.length - 1){
             setcurrentProjectIndex(0);
         }else{
             setcurrentProjectIndex(currentProjectIndex+1);
         }
     }
     const decreaseCurrentIndex = ()=>{
-        if(currentProjectIndex == 0){
+        if(currentProjectIndex === 0){
             setcurrentProjectIndex(projects.length - 1);
         }else{
             setcurrentProjectIndex(currentProjectIndex-1);

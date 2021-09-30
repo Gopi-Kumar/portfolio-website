@@ -1,14 +1,11 @@
 @import './utills.scss';
 
-body{
-    overflow: hidden;
+    body{
+    // overflow: hidden;
     .home{
-        // background:$dark_primary_background;
-        width: 100vw;
         height: 100vh;
         @include  display_as_column();
         .home_background{
-            // width
             position:absolute;
             background:$dark_primary_background;
             width:100vw;

@@ -1,15 +1,17 @@
 @import './utills.scss';
 body{
 	.App{
-		@include display_as_row();
-		.home{
-			display:none;
-		}
-		.skills{
-			display: none;
-		}
-		.projects{
+			// @include display_as_row();
+			.home{
+					
+			}
+			.skills{
+				display: none;
+			}
+			.projects{
+				display:none;
+			}
 			
+
 		}
-	}
-}
+}		

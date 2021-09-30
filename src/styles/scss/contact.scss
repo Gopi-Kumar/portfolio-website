@@ -1,0 +1,26 @@
+@import './utills.scss';
+.contact{
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    background:$primary_background; 
+    .contact_container{
+        width: 100vw;
+        @include display_as_row();
+        flex-wrap: wrap;
+        .message{
+            flex:1;
+            min-width:300px;
+            @include display_as_column_center();
+            .message__form{
+                width: 350px;
+                @include display_as_column_center();
+                
+            }
+        }
+        .social_media{
+            flex:1;
+            min-width:300px;
+        }
+    }
+}

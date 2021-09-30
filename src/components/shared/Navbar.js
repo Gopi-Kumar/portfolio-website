@@ -3,7 +3,6 @@ const Navbar = ()=>{
     let dropdownOpened = false;
     const dropdown = (e) => {
         let dropdownButton = e.target;
-        console.log(dropdownButton)
         let dropdownMenu = dropdownButton.nextSibling;
         if(dropdownOpened){
             dropdownOpened = false;
@@ -18,16 +17,33 @@ const Navbar = ()=>{
             dropdownButton.classList.add("fa-window-close");
         
     }
+
+    const displayHome = ()=>{
+        document.querySelector(".home").style.display = "flex";
+        document.querySelector(".skills").style.display = "none";
+        document.querySelector(".projects").style.display = "none";
+    }
+    const displaySkills = ()=>{
+        document.querySelector(".home").style.display = "none";
+        document.querySelector(".skills").style.display = "block";
+        document.querySelector(".projects").style.display = "none";
+    }
+    const displayProjects = ()=>{
+        document.querySelector(".home").style.display = "none";
+        document.querySelector(".skills").style.display = "none";
+        document.querySelector(".projects").style.display = "block";
+    }
+
     return(
         <div className="navbar">
             <h1 className="name">Gopi Kumar Kaushik</h1>
            <i onClick={(e)=>dropdown(e)} className="fas fa-bars"></i>
             <nav>
-                <li className="active">Home</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
-                <li>More</li>
+                <li className="active" onClick={displayHome}>Home</li>
+                <li onClick={displaySkills}>Skills</li>
+                <li onClick={displayProjects}>Projects</li>
+                {/* <li>Contact</li>
+                <li>More</li> */}
             </nav>
         </div>
     )

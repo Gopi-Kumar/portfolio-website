@@ -1,11 +1,11 @@
 @import './utills.scss';
 
 .skills{
-    overflow:scroll;
-    overflow-x: hidden;
+    // overflow:scroll;
+    // overflow-x: hidden;
     background:$primary_background;
-    width:100vw;
-    height:100vh;
+    // width:100vw;
+    // height:100vh;
     .skills_container{
         color:$primary_text;
         @include display_as_row_center();
