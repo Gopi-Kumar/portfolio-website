@@ -3,29 +3,71 @@ import Navbar from './shared/Navbar'
 import '../styles/css/Skills.css'
 
 const Skills= () => {
-    let skills = [
+
+    // what skills i have
+     let skills = [
         {
-            primary : "Full Stack",
-            secondry : ["HTML","CSS","SCSS","Javscript","PHP", "MySql","MERN Stack","React Native","Electron js","ejs", "Next.js"]
+            primary : "Web Development",
+            secondry : ["HTML","CSS","Javascript","PHP","Nodejs","Next.js"]
         },
         {
-            primary : "Tools",
-            secondry : ["Git & Github","Figma","Photoshop","VS Code","MS Office","NPM"]
+            primary: "Andriod Development",
+            secondry : ["React Native"]
+        },
+        {
+            primary: "Desktop Development",
+            secondry: ["Python tkinter", "Electronjs", "C++"]
+        },
+        {
+            primary: "Database",
+            secondry : ["MySql", "MongoDB"]
+        },
+        {
+            primary : "Tools and Plateform",
+            secondry : ["Git & Github","Figma","Photoshop","MS Office", ]
         },
         {
           primary : "Programming Languages",
           secondry : ["C++","Python","Javascript","Go"]
         }, 
-        {
-            primary : "Computer Science",
-            secondry : ["Operating System","Network and Communication", "DBMS","Compiler Design"]
-        },
-        {
-             primary: "Cyber Security",
-             secondry : ["XSS", "SQL Injection","Helmet js"]
-        }
        
     ]
+    // What skills should be
+    // let skills = [
+    //     {
+    //         primary : "Web Development",
+    //         secondry : ["HTML","CSS","Javscript","PHP","Nodejs","Next.js"]
+    //     },
+    //     {
+    //         primary: "Andriod Development",
+    //         secondry : ["React Native", "Flutter"]
+    //     },
+    //     {
+    //         primary: "Desktop Development",
+    //         secondry: ["Python tkinter", "Electronjs", "C++"]
+    //     },
+    //     {
+    //         primary: "Database",
+    //         secondry : ["MySql", "MongoDB", "Firebase"]
+    //     },
+    //     {
+    //         primary : "Tools and Plateform",
+    //         secondry : ["Git & Github","Figma","Photoshop","MS Office","AWS", "DevOps"]
+    //     },
+    //     {
+    //       primary : "Programming Languages",
+    //       secondry : ["C++","Python","Javascript","Go","Dart","Java"]
+    //     }, 
+    //     {
+    //         primary : "Computer Science",
+    //         secondry : ["Machine Learning","Operating System","Network and Communication", "DBMS","Compiler Design"]
+    //     },
+    //     {
+    //         primary: "Cyber Security",
+    //         secondry : ["XSS", "SQL Injection","Helmet js"]
+    //     }
+       
+    // ]
     return (
         <div className="skills">
             <Navbar/>

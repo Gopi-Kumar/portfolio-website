@@ -42,7 +42,8 @@ const Navbar = ()=>{
                 <li className="active" onClick={displayHome}>Home</li>
                 <li onClick={displaySkills}>Skills</li>
                 <li onClick={displayProjects}>Projects</li>
-                {/* <li>Contact</li>
+                <li> <a href="/resume.pdf" target="_blank">My Resume</a></li>
+                {/* <li>Contact</li>P
                 <li>More</li> */}
             </nav>
         </div>

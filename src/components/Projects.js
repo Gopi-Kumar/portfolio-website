@@ -14,6 +14,13 @@ const projects = [
         address: "https://share-link-app.netlify.com"
     },
     {
+        name : "Deto",
+        about : "Share Link is an online file sharing web portal where you can share your file by uploading. after uploading you will get a link and send this link to that person which person you want to share",
+        thumbnail : ofs,
+        technology : "Nodejs, MongoDB, React, Express",
+        address: "https://share-link-app.netlify.com"
+    },
+    {
         name : "Student Friend",
         about : "Student Friend is a web app that helps students to manage his routine, todo, notes and much more thing so student can focus on study. In student friend there is login-logout option that make student friend to use from anywhere and any device. For data management javascript localstorage api also used .",
         thumbnail : sf,
