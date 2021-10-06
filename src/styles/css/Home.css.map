@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/utills.scss","../scss/Home.scss","../scss/color.scss"],"names":[],"mappings":"AACQ;AACR;EACI;EACA;EACA;;;ACDA;EACI;EDUJ;EACA;;ACTI;EACI;EACA,YCTe;EDUf;EACA;EACA;;AACA;EACI;EACA;EACA;EACA,YChBK;EDiBL;EACA;EACA;;;AAMhB;EAEQ;IACI;IACA","file":"Home.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/Home.css"],"names":[],"mappings":"AAAQ;AACR;EACE;EACA;EACA;;;AAEF;EACE;EACA;EACA;;;AACA;EACE;EACA;EACA;EACA;EACA;;;AACA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAEN;EACE;IACE;IACA;;;AAEJ","file":"Home.css"}

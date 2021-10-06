@@ -39,6 +39,16 @@
 .navbar nav li:hover {
   border-bottom: 3px solid #FF008A;
 }
+.navbar nav li:last-child {
+  border: none;
+}
+.navbar nav li:last-child a {
+  text-decoration: none;
+  background-color: #FF008A;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
 .navbar nav .active {
   border-bottom: 3px solid #FF008A;
 }

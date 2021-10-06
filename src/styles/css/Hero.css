@@ -1,4 +1,4 @@
-@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css';
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css";
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +10,7 @@
   flex-direction: row;
   padding-top: 150px;
 }
+
 .hero section {
   flex: 1;
   color: white;
@@ -20,25 +21,31 @@
   align-items: center;
   text-shadow: 2px 2px 5px black;
 }
+
 .hero section:nth-child(1) {
   align-items: flex-start;
   padding: 20px 20px 0px 80px;
 }
+
 .hero section:nth-child(2) {
   align-items: flex-start;
   margin-left: 100px;
 }
+
 .hero section .designation {
   font-size: 40px;
 }
+
 .hero section .designation span {
   color: #116FC6;
   font-weight: 500;
 }
+
 .hero section .social_media a {
   color: white;
   padding: 6px;
 }
+
 .hero section .img_container {
   width: 300px;
   height: 300px;
@@ -47,6 +54,7 @@
   border-radius: 50%;
   box-shadow: 1px 1px 10px 5px black;
 }
+
 .hero section .img_container img {
   width: 300px;
 }
@@ -56,6 +64,7 @@
     flex: 2;
     padding: 40px;
   }
+
   .hero section:nth-child(2) {
     margin-left: 0px;
   }
@@ -64,13 +73,16 @@
   .hero section:nth-child(1) {
     font-size: 20px;
   }
+
   .hero section:nth-child(1) .designation {
     font-size: 35px;
   }
+
   .hero section:nth-child(2) .img_container {
     width: 250px;
     height: 250px;
   }
+
   .hero section:nth-child(2) .img_container img {
     width: 250px;
   }
@@ -80,6 +92,7 @@
     padding-top: 0px;
     flex-direction: column-reverse;
   }
+
   .hero section:nth-child(2) {
     display: flex;
     flex-direction: row;
@@ -92,9 +105,11 @@
   .hero section:nth-child(1) {
     font-size: 18px;
   }
+
   .hero section:nth-child(1) .designation {
     font-size: 30px;
   }
+
   .hero section:nth-child(2) {
     padding: 20px;
   }
@@ -104,16 +119,20 @@
     padding: 15px;
     font-size: 18px;
   }
+
   .hero section:nth-child(1) .designation {
     font-size: 25px;
   }
+
   .hero section:nth-child(2) {
     padding: 40px;
   }
+
   .hero section:nth-child(2) .img_container {
     width: 200px;
     height: 200px;
   }
+
   .hero section:nth-child(2) .img_container img {
     width: 200px;
   }
@@ -123,19 +142,24 @@
     padding: 15px;
     font-size: 18px;
   }
+
   .hero section:nth-child(1) .designation {
     font-size: 20px;
   }
+
   .hero section:nth-child(2) {
     padding: 40px;
   }
+
   .hero section:nth-child(2) .img_container {
     width: 200px;
     height: 200px;
   }
+
   .hero section:nth-child(2) .img_container img {
     width: 200px;
   }
 }
+/*# sourceMappingURL=Hero.css.map */
 
 /*# sourceMappingURL=Hero.css.map */

@@ -27,6 +27,17 @@
             &:hover{
                 border-bottom:3px solid $navbar_profile_pic_border;
             }
+           
+            &:last-child{
+                border:none;
+                a{
+                    text-decoration: none;
+                    background-color: $navbar_profile_pic_border;
+                    color:white;
+                    padding:5px 20px;
+                    border-radius: 5px;
+                }
+            }
             
         }
         .active{

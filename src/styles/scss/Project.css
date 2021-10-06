@@ -1,0 +1,126 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.projects {
+  background: #000112;
+  min-height: 100vh; }
+  .projects .project_container {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white; }
+    .projects .project_container section {
+      height: 500px;
+      flex: 1;
+      margin-top: 20px; }
+      .projects .project_container section:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-right: 5px solid #FF008A; }
+        .projects .project_container section:nth-child(1) img {
+          max-width: 450px;
+          max-height: 500px; }
+      .projects .project_container section:nth-child(2) {
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column; }
+        .projects .project_container section:nth-child(2) h1 {
+          text-decoration: underline;
+          font-size: 33px;
+          font-weight: 600; }
+        .projects .project_container section:nth-child(2) p {
+          font-size: 20px; }
+        .projects .project_container section:nth-child(2) div {
+          background: #02063f;
+          margin: 40px 0px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 20px 0px;
+          border-radius: 5px; }
+          .projects .project_container section:nth-child(2) div p:nth-child(1) {
+            color: #FF008A; }
+        .projects .project_container section:nth-child(2) a {
+          width: 100%;
+          background: #116FC6;
+          text-decoration: none;
+          color: white;
+          text-align: center;
+          margin: 10px 0px;
+          padding: 8px 0px;
+          font-size: 18px;
+          border-radius: 5px; }
+  .projects .next_prev_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    margin-bottom: 0px;
+    padding: 20px 0px;
+    color: white; }
+    .projects .next_prev_container button {
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      border: none;
+      background: #FF008A;
+      color: white;
+      padding: 5px 30px;
+      margin: 0px 10px;
+      border-radius: 3px; }
+      .projects .next_prev_container button i {
+        font-style: normal; }
+      .projects .next_prev_container button .fas {
+        margin: 5px;
+        font-size: 25px; }
+
+@media only screen and (max-width: 930px) {
+  .projects .project_container section {
+    height: 500px; }
+    .projects .project_container section img {
+      width: 300px; }
+    .projects .project_container section:nth-child(2) h1 {
+      font-size: 25px; }
+    .projects .project_container section:nth-child(2) p {
+      font-size: 16px; }
+    .projects .project_container section:nth-child(2) div {
+      margin: 20px 0px; }
+      .projects .project_container section:nth-child(2) div p {
+        text-align: center;
+        font-size: 15px; }
+    .projects .project_container section:nth-child(2) a {
+      font-size: 14px; }
+  .projects .next_prev_container button .fas {
+    font-size: 15px; } }
+@media only screen and (max-width: 700px) {
+  .projects .project_container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .projects .project_container section:nth-child(2) div {
+      margin: 5px 0px; }
+    .projects .project_container section:nth-child(2) a {
+      margin: 5px 0px; }
+  .projects .next_prev_container {
+    margin: 5px 0px; } }
+@media only screen and (max-width: 319px) {
+  .projects .project_container section img {
+    width: 100vw; }
+  .projects .project_container section:nth-child(2) {
+    padding: 5px; } }
+
+/*# sourceMappingURL=Project.css.map */
