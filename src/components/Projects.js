@@ -6,39 +6,40 @@ import sf from '../images/sf.PNG'
 import { useState } from 'react'
 import '../styles/css/Project.css'
 const projects = [
-    {
-        name : "Share Link",
-        about : "Share Link is an online file sharing web portal where you can share your file by uploading. after uploading you will get a link and send this link to that person which person you want to share",
-        thumbnail : ofs,
-        technology : "Nodejs, MongoDB, React, Express",
-        address: "https://share-link-app.netlify.com"
-    },
+   
     {
         name : "Deto",
-        about : "Share Link is an online file sharing web portal where you can share your file by uploading. after uploading you will get a link and send this link to that person which person you want to share",
+        about : "Deto is a designing app that helps you in design things easily like ID Cards, Business Card, Question Paper and more",
         thumbnail : ofs,
-        technology : "Nodejs, MongoDB, React, Express",
-        address: "https://share-link-app.netlify.com"
+        technology : "Nodejs, Expressjs, ejs, MongoDB, pdfjs, SASS",
+        address: "https://deto.desync.in"
     },
     {
         name : "Student Friend",
         about : "Student Friend is a web app that helps students to manage his routine, todo, notes and much more thing so student can focus on study. In student friend there is login-logout option that make student friend to use from anywhere and any device. For data management javascript localstorage api also used .",
         thumbnail : sf,
         technology : "Html, Css & Javascript,Nodejs, MongoDB",
-        address: "https://student-friend.netlify.com"
+        address: "https://student-friend.desync.in"
+    },
+    {
+        name : "Share Link",
+        about : "Share Link is an online file sharing web portal where you can share your file by uploading. after uploading you will get a link and send this link to that person which person you want to share",
+        thumbnail : ofs,
+        technology : "Nodejs, MongoDB, React, Express",
+        address: "https://share-link.desync.in"
     },
     {
         name : "Snake Game",
         about : "A snake game is a game which founded in Nokia's older version cellphone. ",
         technology : "Html, Css & Javascript",
         thumbnail: snakeGame,
-        address  :"http://snake-game-gopi.netlify.com"
+        address  :"http://snake-game.desync.in"
     },
     {
         name : "Letter Box",
         thumbnail : lb,
         technology : "Nodejs, MongoDB, HTML, CSS",
-        address : "https://letter-box.herokuapp.com/",
+        address : "https://letter-box.desync.in/",
         about : "Letter box is a free api that can you use to get message and retrive message without writing single line of code for backend"
     }
 ]

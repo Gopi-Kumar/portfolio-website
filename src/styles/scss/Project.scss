@@ -4,7 +4,9 @@
     background:$dark_primary_background;
     min-height:100vh;
     .project_container{
-        height:80%;
+        height:100%;
+        max-width: 1500px;
+        margin:0px auto;
         @include display_as_row_center();
         color:$primary_text;
         section{
@@ -15,6 +17,7 @@
                 @include display_as_row_center();
                 border-right:5px solid $navbar_profile_pic_border;
                 img{
+                    z-index: 34;
                     max-width: 450px;
                     max-height: 500px;
                 }

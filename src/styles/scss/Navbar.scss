@@ -1,6 +1,7 @@
 @import './utills.scss';
 .navbar{
     width:100vw;
+    top:0;
     @include display_as_row_space_between();
     color:$primary_text;
     .name{
@@ -48,10 +49,11 @@
 
 @media only screen and (max-width:835px){
     .navbar{
-    .name{
-        font-size:20px;
-    }
+        .name{
+            font-size:20px;
+        }
         nav{
+            z-index: 234234;
             display:none;
             position:absolute;
             top:0;

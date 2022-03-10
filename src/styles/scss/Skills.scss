@@ -2,19 +2,24 @@
 
 .skills{
     // overflow:scroll;
-    // overflow-x: hidden;
+    overflow-x: hidden;
     background:$primary_background;
     // width:100vw;
-    // height:100vh;
+    min-height:100vh;
     .skills_container{
+        min-height: 100vh;
         color:$primary_text;
-        @include display_as_row_center();
+        @include display_as_row();
+        align-content: center;
+        justify-content: center;
+
         flex-wrap: wrap;
+        // height:100%;
         .skill_container{
-            width:28vw;
+            width:400px;
             height:280px;
             margin:10px;
-            background:$dark_primary_background;
+        background:$dark_primary_background;
             @include display_as_column_center();
             .skill_primary{
                 text-align: center;

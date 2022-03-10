@@ -1,5 +1,8 @@
 
 const Social = () => {
+
+    
+
     return (
         <div className="social_media">
             <a target="blank" href="https://github.com/Gopi-Kumar" className="social_media_icon">

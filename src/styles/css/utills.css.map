@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["../scss/utills.css"],"names":[],"mappings":"AAAQ;AACR;EACE;EACA;EACA;;;AAEF","file":"utills.css"}
+{
+"version": 3,
+"mappings": "AACQ,yFAAiF;AACzF,CAAC;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;EACT,UAAU,EAAE,UAAU",
+"sources": ["../scss/utills.scss"],
+"names": [],
+"file": "utills.css"
+}

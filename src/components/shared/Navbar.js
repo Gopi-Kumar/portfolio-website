@@ -7,31 +7,33 @@ const Navbar = ()=>{
         if(dropdownOpened){
             dropdownOpened = false;
             dropdownMenu.style.display = "none";
-            dropdownButton.classList.add("fa-bars");
-            dropdownButton.classList.remove("fa-window-close");
-            return;
-        }
+        }else{
             dropdownOpened = true;
             dropdownMenu.style.display = "flex";
-            dropdownButton.classList.remove("fa-bars");
-            dropdownButton.classList.add("fa-window-close");
+        }
         
     }
 
-    const displayHome = ()=>{
+    const displayHome = (ele)=>{
+        // ele.classList.add("active")
         document.querySelector(".home").style.display = "flex";
         document.querySelector(".skills").style.display = "none";
         document.querySelector(".projects").style.display = "none";
+       
     }
-    const displaySkills = ()=>{
+    const displaySkills = (ele)=>{
+        // ele.classList.add("active")
         document.querySelector(".home").style.display = "none";
         document.querySelector(".skills").style.display = "block";
         document.querySelector(".projects").style.display = "none";
+       
     }
-    const displayProjects = ()=>{
+    const displayProjects = (ele)=>{
+        // ele.classList.add("active")
         document.querySelector(".home").style.display = "none";
         document.querySelector(".skills").style.display = "none";
         document.querySelector(".projects").style.display = "block";
+       
     }
 
     return(
@@ -39,9 +41,9 @@ const Navbar = ()=>{
             <h1 className="name">Gopi Kumar Kaushik</h1>
            <i onClick={(e)=>dropdown(e)} className="fas fa-bars"></i>
             <nav>
-                <li className="active" onClick={displayHome}>Home</li>
-                <li onClick={displaySkills}>Skills</li>
-                <li onClick={displayProjects}>Projects</li>
+                <li  onClick={(e) => {displayHome(e.currentTarget)}}>Home</li>
+                <li onClick={(e) => displaySkills(e.currentTarget)}>Skills</li>
+                <li onClick={(e) => displayProjects(e.currentTarget)}>Projects</li>
                 <li> <a href="/resume.pdf" target="_blank">My Resume</a></li>
                 {/* <li>Contact</li>P
                 <li>More</li> */}

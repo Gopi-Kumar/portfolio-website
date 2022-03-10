@@ -1,12 +1,14 @@
 @import './utills.scss';
 .hero{
-    @include display_as_row();
-    padding-top:150px;
+    @include display_as_row_center();
+    max-width: 1200px;
+    margin:0px auto;
+    min-height: 80vh;
     section{
-        // height:700px;
-        flex:1;
+        height:100%;
         color:$primary_text;
         font-size: 25px;
+        padding:20px;
         @include  display_as_column_center();
         text-shadow: 2px 2px 5px black;
         &:nth-child(1){
@@ -41,6 +43,7 @@
             box-shadow: 1px 1px 10px 5px rgb(0, 0, 0);
             img{
                 width:300px;
+                // height:300px;
             }
         }
     }
@@ -82,9 +85,11 @@
 }
 @media only screen and (max-width:730px){
     .hero{
+        height: auto;
         padding-top:0px;
         flex-direction:column-reverse;
         section{
+            padding:0;
             &:nth-child(2){
                 @include display_as_row_center();
                 padding:30px;

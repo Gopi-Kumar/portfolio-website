@@ -6,31 +6,27 @@ const Skills= () => {
 
     // what skills i have
      let skills = [
-        {
-            primary : "Web Development",
-            secondry : ["HTML","CSS","Javascript","PHP","Nodejs","Next.js"]
-        },
-        {
-            primary: "Andriod Development",
-            secondry : ["React Native"]
-        },
-        {
-            primary: "Desktop Development",
-            secondry: ["Python tkinter", "Electronjs", "C++"]
-        },
-        {
-            primary: "Database",
-            secondry : ["MySql", "MongoDB"]
-        },
-        {
-            primary : "Tools and Plateform",
-            secondry : ["Git & Github","Figma","Photoshop","MS Office", ]
-        },
-        {
-          primary : "Programming Languages",
-          secondry : ["C++","Python","Javascript","Go"]
-        }, 
        
+        {
+            primary : "Programming Languages",
+            secondry : ["Javascript","Nodejs","PHP","Python", "MySQL", "MongoDB","HTML","CSS","Bash", "C++"]
+        },
+        {
+            primary : "Libraries and Frameworks",
+            secondry : ["Vuejs", "Reactjs","Expressjs","Tkinter","Nextjs","ejs","jQuery", "Bootstrap", "Sass"]
+        },
+        {
+            primary : "Tools and Platform",
+            secondry : ["Git","Figma","Adobe Photoshop","Docker", "MS Office","Linux", "Mocha&Chai", "NPM", "Pip"]
+        },
+        {
+            primary : "Extra",
+            secondry : ["Data Structure and Algorithm", "Computer Operating System", "Networking"]
+        },
+        {
+            primary : "Soft Skills",
+            secondry : ["Quick Learner","Presentation Skills", "Communication", "Team Player"]
+        }
     ]
     // What skills should be
     // let skills = [
