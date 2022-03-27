@@ -3,6 +3,7 @@ import snakeGame from '../images/snake-game.png'
 import ofs from '../images/file.PNG'
 import lb from '../images/letter-box.png'
 import sf from '../images/sf.PNG'
+import deto from '../images/deto.png'
 import { useState } from 'react'
 import '../styles/css/Project.css'
 const projects = [
@@ -10,7 +11,7 @@ const projects = [
     {
         name : "Deto",
         about : "Deto is a designing app that helps you in design things easily like ID Cards, Business Card, Question Paper and more",
-        thumbnail : ofs,
+        thumbnail : deto,
         technology : "Nodejs, Expressjs, ejs, MongoDB, pdfjs, SASS",
         address: "https://deto.desync.in"
     },
