@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AACQ,yFAAiF;AACzF,CAAC;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;EACT,UAAU,EAAE,UAAU",
+"mappings": "AACQ,yFAAiF;AACzF,CAAC;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;EACT,UAAU,EAAE,UAAU;EACtB,UAAU,EAAE,MAAM",
 "sources": ["../scss/utills.scss"],
 "names": [],
 "file": "utills.css"

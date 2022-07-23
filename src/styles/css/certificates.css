@@ -1,0 +1,75 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+.certificates {
+  width: 100%;
+  background-color: #02063f;
+  height: 100vh; }
+  .certificates .certificates_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 10px; }
+    .certificates .certificates_container .img img {
+      width: 600px; }
+    .certificates .certificates_container .list {
+      margin-left: 20px;
+      height: 500px;
+      overflow-y: scroll;
+      padding: 10px; }
+      .certificates .certificates_container .list .button {
+        width: 400px;
+        height: 50px;
+        background-color: #121263;
+        color: white;
+        margin-top: 5px;
+        font-size: 15px;
+        padding: 8px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px #000112;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        .certificates .certificates_container .list .button:hover {
+          box-shadow: -2px -2px 3px #000112 inset; }
+
+@media only screen and (max-width: 1050px) {
+  .certificates .certificates_container {
+    padding-top: 10px; }
+    .certificates .certificates_container .img img {
+      width: 350px; }
+    .certificates .certificates_container .list {
+      height: 350px; }
+      .certificates .certificates_container .list .button {
+        width: 300px;
+        height: 50px;
+        font-size: 15px;
+        overflow: hidden;
+        padding: 0;
+        margin: 5px auto; } }
+@media only screen and (max-width: 700px) {
+  .certificates .certificates_container .img img {
+    width: 95vw; } }
+@media only screen and (max-width: 400px) {
+  .certificates {
+    padding: 0; }
+    .certificates .certificates_container {
+      padding: 0; }
+      .certificates .certificates_container .list {
+        width: 100vw;
+        padding: 0;
+        margin: 0 auto;
+        height: 300px; }
+        .certificates .certificates_container .list button {
+          width: 100vw; } }
+
+/*# sourceMappingURL=certificates.css.map */

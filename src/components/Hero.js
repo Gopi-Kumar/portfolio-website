@@ -9,22 +9,22 @@ const Hero = ()=>{
         gsap.from(".about p", {
             translateY : -80,
            opacity : 0,
-            duration : 1,
-            delay : 1
+            duration : 0.5,
+            delay :1
         })
 
         gsap.from(".img_container", {
            translateY : -80,
            opacity : 0,
-           duration : 1,
-           delay : 2
+           duration : 0.5,
+           delay : 1.5
         })
 
         gsap.from(".social_media", {
             translateY : -80,
             opacity : 0,
-            duration : 1,
-            delay : 3
+            duration : 0.5,
+            delay : 2
         })
 
     }, [])
@@ -36,7 +36,7 @@ const Hero = ()=>{
                 <p className="designation type_this">
                     I am <span>Full Stack Developer</span>
                 </p>
-                <p>
+                <p style={{maxWidth:"400px"}} >
                     Working as Full Stack Developer from 2 Years.My expertise to create web apps, desktop apps, mobile apps, graphic design and many more.
                 </p>
                 <Social/>

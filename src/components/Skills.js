@@ -13,7 +13,7 @@ const Skills= () => {
         },
         {
             primary : "Libraries and Frameworks",
-            secondry : ["Reactjs","Expressjs","Tkinter","Nextjs","ejs","jQuery", "Bootstrap", "SASS"]
+            secondry : ["Reactjs","Expressjs","Kivy","Tkinter","Nextjs","ejs","jQuery", "Bootstrap", "SASS"]
         },
         {
             primary : "Tools and Platform",

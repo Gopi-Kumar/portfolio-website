@@ -19,9 +19,9 @@
     nav{
         @include display_as_row_center();
         li{
-            font-size:20px;
+            font-size:17px;
             list-style: none;
-            padding:20px 20px 8px 20px;
+            padding:8px 15px; 
             // background:red;
             border-bottom:3px solid transparent;
             cursor: pointer;
@@ -76,11 +76,12 @@
 @media only screen and (max-width:370px){
    
 }
-@media only screen and (max-width:300px){
-    .navbar{
+    @media only screen and (max-width:300px){
+        .navbar{
         i{
             padding:10px;
             z-index: 23;
+            font-size: 20px;
         }
     }
 }

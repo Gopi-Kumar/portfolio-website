@@ -2,14 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 .hero {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   margin: 0px auto;
   min-height: 80vh; }
   .hero section {
@@ -33,18 +33,20 @@
       .hero section .designation span {
         color: #116FC6;
         font-weight: 500; }
-    .hero section .social_media a {
-      color: white;
-      padding: 6px; }
+    .hero section .social_media {
+      overflow: hidden; }
+      .hero section .social_media a {
+        color: white;
+        padding: 6px; }
     .hero section .img_container {
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
       overflow: hidden;
-      border: 12px solid #FF008A;
+      border: 10px solid #FF008A;
       border-radius: 50%;
       box-shadow: 1px 1px 10px 5px black; }
       .hero section .img_container img {
-        width: 300px; }
+        width: 250px; }
 
 @media only screen and (max-width: 1100px) {
   .hero section:nth-child(1) {

@@ -2,11 +2,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 body .App .skills {
   display: none; }
 body .App .projects {
+  display: none; }
+body .App .certificates {
   display: none; }
 
 /*# sourceMappingURL=app.css.map */
