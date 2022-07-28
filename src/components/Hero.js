@@ -3,29 +3,30 @@ import '../styles/css/Hero.css';
 import Social from './Social'
 import {gsap} from 'gsap'
 import { useEffect } from 'react';
+import NextPage from './shared/NextPage';
 const Hero = ()=>{
 
     useEffect(() => {
-        gsap.from(".about p", {
-            translateY : -80,
-           opacity : 0,
-            duration : 0.5,
-            delay :1
-        })
+        // gsap.from(".about p", {
+        //     translateY : -80,
+        //    opacity : 0,
+        //     duration : 0.5,
+        //     delay :1
+        // })
 
-        gsap.from(".img_container", {
-           translateY : -80,
-           opacity : 0,
-           duration : 0.5,
-           delay : 1.5
-        })
+        // gsap.from(".img_container", {
+        //    translateY : -80,
+        //    opacity : 0,
+        //    duration : 0.5,
+        //    delay : 1.5
+        // })
 
-        gsap.from(".social_media", {
-            translateY : -80,
-            opacity : 0,
-            duration : 0.5,
-            delay : 2
-        })
+        // gsap.from(".social_media", {
+        //     translateY : -80,
+        //     opacity : 0,
+        //     duration : 0.5,
+        //     delay : 2
+        // })
 
     }, [])
 
@@ -46,6 +47,7 @@ const Hero = ()=>{
                <img id="profile_pic" src={profilePic} alt="Gopi Kumar Kaushik"/>
                </div>
             </section>
+            <NextPage page={"skills"}/>
         </div>
     )
 }

@@ -1,7 +1,7 @@
 
 import Navbar from './shared/Navbar'
 import '../styles/css/Skills.css'
-
+import NextPage from './shared/NextPage'
 const Skills= () => {
 
     // what skills i have
@@ -85,6 +85,7 @@ const Skills= () => {
                     )
                 })}
             </div>
+            <NextPage page={"projects"}/>
         </div>
     )
 }

@@ -6,6 +6,7 @@ import sf from '../images/sf.PNG'
 import deto from '../images/deto.png'
 import { useState } from 'react'
 import '../styles/css/Project.css'
+import NextPage from './shared/NextPage'
 const projects = [
    
     {
@@ -85,6 +86,7 @@ const Project =  () => {
                 <p>{currentProjectIndex+1}/{projects.length}</p>
                 <button onClick={increaseCurrentIndex}><i>Next</i><i className="fas fa-arrow-right"></i></button>
             </div>
+            <NextPage page={"certificates"}/>
        </div>
     )
 }

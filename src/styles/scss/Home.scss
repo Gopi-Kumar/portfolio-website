@@ -2,8 +2,9 @@
 
     body{
     // overflow: hidden;
+        // background: red;
     .home{
-        min-height: 100vh;
+        height: 100vh;
         @include  display_as_column();
         .home_background{
             position:absolute;

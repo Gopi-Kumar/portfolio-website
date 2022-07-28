@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden; }
+  * body {
+    background-image: url("https://i.pinimg.com/originals/8c/1e/e6/8c1ee6e8d08b11c7787052a1bc7f9044.jpg");
+    background-size: cover; }
 
 .skills {
   overflow-x: hidden;
@@ -22,6 +25,7 @@
       height: 280px;
       margin: 10px;
       background: #000112;
+      border-radius: 4px;
       display: flex;
       flex-direction: column;
       justify-content: center;

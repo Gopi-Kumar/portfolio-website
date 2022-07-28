@@ -9,16 +9,22 @@ import dvf from '../images/cert/dvf.png'
 import phps from '../images/cert/pphs.jpg'
 import rwdf from '../images/cert/rwdf.png'
 import jadsf from '../images/cert/jadsf.png'
+import exgl from '../images/cert/exgl.png'
+import NextPage from './shared/NextPage';
+
 
 export default function Certificates() {
 
     const certificates = [
+
         {name: "Responsive Web Design - Freecodecamp", img: rwdf},
         {name : "Front End Development Libraries - Freecodecamp", img:fedlf},   
         {name : "Javascript Algorithm and Data Structure - Freecodecamp", img:jadsf},
         {name :"Back End Development and APIS - Freecodecamp", img:bedaf},
         {name: "PHP - Sololearn", img: phps},
         {name :"Data Visualization - Freecodecamp", img:dvf},
+        {name: "Excel for Intermediate Level - Great Learning", img:exgl}
+        
     ]
     
     const [src, setSrc] = useState(certificates[0].img)
@@ -36,6 +42,7 @@ export default function Certificates() {
                    })}
                 </div>
             </div>
+            <NextPage page={"home"}/>
         </div>
     )
 }
