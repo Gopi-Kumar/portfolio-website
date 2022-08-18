@@ -17,7 +17,7 @@ const Skills= () => {
         },
         {
             primary : "Tools and Platform",
-            secondry : ["Git","Figma","Adobe Photoshop","Docker", "MS Office","Linux", "Mocha&Chai", "NPM", "Pip"]
+            secondry : ["Git","Github","Figma","Adobe Photoshop","Docker", "MS Office","Linux", "Mocha&Chai", "NPM", "Pip"]
         },
         {
             primary : "Extra",

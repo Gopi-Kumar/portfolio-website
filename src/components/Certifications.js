@@ -11,7 +11,7 @@ import rwdf from '../images/cert/rwdf.png'
 import jadsf from '../images/cert/jadsf.png'
 import exgl from '../images/cert/exgl.png'
 import NextPage from './shared/NextPage';
-
+import statsgl from '../images/cert/statsgl.png';
 
 export default function Certificates() {
 
@@ -23,6 +23,7 @@ export default function Certificates() {
         {name :"Back End Development and APIS - Freecodecamp", img:bedaf},
         {name: "PHP - Sololearn", img: phps},
         {name :"Data Visualization - Freecodecamp", img:dvf},
+        {name: "Statstics for ML - Great Learning", img: statsgl},
         {name: "Excel for Intermediate Level - Great Learning", img:exgl}
         
     ]

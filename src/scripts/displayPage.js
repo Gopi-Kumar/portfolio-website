@@ -5,10 +5,10 @@ const display = (ele) => {
     divs.forEach(div => {
         if (div.classList[0] === ele) {
             div.style.display = "block"
-            gsap.from(div, {
-                width: 0,
-                duration: 1,
-            })
+            // gsap.from(div, {
+            //     width: 0,
+            //     duration: 1,
+            // })
 
         } else {
             div.style.display = "none"

@@ -17,6 +17,20 @@ const projects = [
         address: "https://deto.desync.in"
     },
     {
+        name : "DeSync Blogs",
+        about : "This blog website where I write blogs, notes related to various topics like Cyber Security, Computer Networks, Data Structure and Algorithm and many more things.",
+        thumbnail : deto,
+        technology : "Nodejs, Expressjs, MongoDB, SASS, HTML, CSS",
+        address: "https://blog.desync.in"
+    },
+    {
+        name : "History",
+        about : "A Search Engine for World History.",
+        thumbnail : deto,
+        technology : "Nodejs, Expressjs, MongoDB, SASS, ejs, CSS",
+        address: "https://history.desync.in"
+    },
+    {
         name : "Student Friend",
         about : "Student Friend is a web app that helps students to manage his routine, todo, notes and much more thing so student can focus on study. In student friend there is login-logout option that make student friend to use from anywhere and any device. For data management javascript localstorage api also used .",
         thumbnail : sf,
@@ -68,7 +82,8 @@ const Project =  () => {
            <Navbar/>
            <div className="project_container">
                <section className="img_container">
-                   <img src={projects[currentProjectIndex].thumbnail}alt="" />
+                   {/* <img src={projects[currentProjectIndex].thumbnail}alt="" /> */}
+                   <iframe src={projects[currentProjectIndex].address} title={projects[currentProjectIndex].name} ></iframe>
                </section>
                <section>
                    <h1>{projects[currentProjectIndex].name}</h1>
