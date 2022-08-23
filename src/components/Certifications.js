@@ -12,19 +12,28 @@ import jadsf from '../images/cert/jadsf.png'
 import exgl from '../images/cert/exgl.png'
 import NextPage from './shared/NextPage';
 import statsgl from '../images/cert/statsgl.png';
+import anagoogle from '../images/cert/anagoogle.png'
+import statigl from '../images/cert/statsgl.png'
+import timemg from '../images/cert/timemg.png'
+import uigl from '../images/cert/uigl.png'
 
 export default function Certificates() {
 
     const certificates = [
 
         {name: "Responsive Web Design - Freecodecamp", img: rwdf},
+        {name: "UI/UX Designing - Great Learning" ,img : uigl},
         {name : "Front End Development Libraries - Freecodecamp", img:fedlf},   
         {name : "Javascript Algorithm and Data Structure - Freecodecamp", img:jadsf},
         {name :"Back End Development and APIS - Freecodecamp", img:bedaf},
         {name: "PHP - Sololearn", img: phps},
         {name :"Data Visualization - Freecodecamp", img:dvf},
-        {name: "Statstics for ML - Great Learning", img: statsgl},
-        {name: "Excel for Intermediate Level - Great Learning", img:exgl}
+        {name: "Statstics for Machine Leanring - Great Learning" , img: statigl},
+        {name: "Software Testing - Great Learning", img: statsgl},
+        {name : "Google Analytics - Google", img: anagoogle},
+        {name: "Excel for Intermediate Level - Great Learning", img:exgl},
+        {name : "Time Management - Great Learning", img: timemg} 
+
         
     ]
     
