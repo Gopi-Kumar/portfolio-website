@@ -22,42 +22,43 @@ const projects = [
         thumbnail : deto,
         technology : "Nodejs, Expressjs, MongoDB, SASS, HTML, CSS",
         address: "https://blog.desync.in"
-    },
+    },  
     {
         name : "History",
-        about : "A Search Engine for World History.",
+        about : "Search in History by Events, Date, Month, Person name, Year Range and Many more at History Timeline. Powered by DeSync Cyber Solution",
         thumbnail : deto,
         technology : "Nodejs, Expressjs, MongoDB, SASS, ejs, CSS",
         address: "https://history.desync.in"
     },
-    {
-        name : "Student Friend",
-        about : "Student Friend is a web app that helps students to manage his routine, todo, notes and much more thing so student can focus on study. In student friend there is login-logout option that make student friend to use from anywhere and any device. For data management javascript localstorage api also used .",
-        thumbnail : sf,
-        technology : "Html, Css & Javascript,Nodejs, MongoDB",
-        address: "https://student-friend.desync.in"
-    },
-    {
-        name : "Share Link",
-        about : "Share Link is an online file sharing web portal where you can share your file by uploading. after uploading you will get a link and send this link to that person which person you want to share",
-        thumbnail : ofs,
-        technology : "Nodejs, MongoDB, React, Express",
-        address: "https://share-link.desync.in"
-    },
+    // {
+    //     name : "Student Friend",
+    //     about : "Student Friend is a web app that helps students to manage his routine, todo, notes and much more thing so student can focus on study. In student friend there is login-logout option that make student friend to use from anywhere and any device. For data management javascript localstorage api also used .",
+    //     thumbnail : sf,
+    //     technology : "Html, Css & Javascript,Nodejs, MongoDB",
+    //     address: "https://student-friend.desync.in"
+    // },
+    // {
+    //     name : "Share Link",
+    //     about : "Share Link is an online file sharing web portal where you can share your file by uploading. after uploading you will get a link and send this link to that person which person you want to share",
+    //     thumbnail : ofs,
+    //     technology : "Nodejs, MongoDB, React, Express",
+    //     address: "https://share-link.desync.in"
+    // },
     {
         name : "Snake Game",
-        about : "A snake game is a game which founded in Nokia's older version cellphone. ",
+        about : "A snake game is a game. you can play it in both PC And Mobile",
         technology : "Html, Css & Javascript",
         thumbnail: snakeGame,
         address  :"http://snake-game.desync.in"
-    },
-    {
-        name : "Letter Box",
-        thumbnail : lb,
-        technology : "Nodejs, MongoDB, HTML, CSS",
-        address : "https://letter-box.desync.in/",
-        about : "Letter box is a free api that can you use to get message and retrive message without writing single line of code for backend"
     }
+    // ,
+    // {
+    //     name : "Letter Box",
+    //     thumbnail : lb,
+    //     technology : "Nodejs, MongoDB, HTML, CSS",
+    //     address : "https://letter-box.desync.in/",
+    //     about : "Letter box is a free api that can you use to get message and retrive message without writing single line of code for backend"
+    // }
 ]
 
 const Project =  () => {
@@ -92,8 +93,8 @@ const Project =  () => {
                        <p>Technologies Used</p>
                        <p>{projects[currentProjectIndex].technology}</p>
                    </div>
-                   <a href={projects[currentProjectIndex].address}>See Preview</a>
-                   <a href={projects[currentProjectIndex].address}>Github Source Code</a>
+                   <a href={projects[currentProjectIndex].address}>Open in Browser</a>
+                   {/* <a href={projects[currentProjectIndex].address}>Github Source Code</a> */}
                </section>
            </div>
             <div className="next_prev_container">

@@ -38,7 +38,7 @@ const Hero = ()=>{
                     I am <span>Full Stack Developer</span>
                 </p>
                 <p style={{maxWidth:"400px"}} >
-                    Working as Full Stack Developer from 2 Years.My expertise to create web apps, desktop apps, mobile apps, graphic design and many more.
+                    Working as Full Stack Developer from 2 Years.My expertise to create Wep Apps, Desktop App and many more.
                 </p>
                 <Social/>
             </section>
