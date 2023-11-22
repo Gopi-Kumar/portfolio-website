@@ -8,62 +8,32 @@ const Skills= () => {
      let skills = [
        
         {
-            primary : "Programming Languages",
-            secondry : ["Javascript","Nodejs","PHP","Python", "MySQL", "MongoDB","HTML","CSS","Bash", "C++"]
+            primary : "Frontent & Backend Development",
+            secondry : ["MERN Stack", "PHP", "SQL", "SQLite", "MongoDB", "d3.js", ]
         },
         {
-            primary : "Libraries and Frameworks",
-            secondry : ["Reactjs","Expressjs","Kivy","Tkinter","Nextjs","ejs","jQuery", "Bootstrap", "SASS"]
+            primary : "Mobile and Desktop Development",
+            secondry : ["Flutter", "Electron.js", "Tkinter", "Firebase"]
         },
         {
             primary : "Tools and Platform",
-            secondry : ["Git","Github","Figma","Adobe Photoshop","Docker", "MS Office","Linux", "Mocha&Chai", "NPM", "Pip"]
+            secondry : ["MS Office","Git","Github","Figma","Adobe Photoshop","Docker", "Linux", "Mocha&Chai", "NGINX", "Pip"]
         },
         {
-            primary : "Extra",
-            secondry : ["Data Structure and Algorithm", "Computer Operating System", "Networking"]
+            primary : "Automation and Scripting",
+            secondry : ["Selenium","Python","Shell", "GoogleScript", "Adobe Photoshop"]
         },
         {
-            primary : "Soft Skills",
-            secondry : ["Quick Learner","Presentation Skills", "Communication", "Team Player"]
+            primary : "Design and Multimedia Manipulation",
+            secondry : ["OpenCV","Adobe Photoshop", "Figma", "Openshot"]
+        },
+        {
+            primary : "Subject",
+            secondry : ["Data Structure and Algorithm", "System Design and Analysis", "Database Management System", "Accountancy"]
         }
-    ]
-    // What skills should be
-    // let skills = [
-    //     {
-    //         primary : "Web Development",
-    //         secondry : ["HTML","CSS","Javscript","PHP","Nodejs","Next.js"]
-    //     },
-    //     {
-    //         primary: "Andriod Development",
-    //         secondry : ["React Native", "Flutter"]
-    //     },
-    //     {
-    //         primary: "Desktop Development",
-    //         secondry: ["Python tkinter", "Electronjs", "C++"]
-    //     },
-    //     {
-    //         primary: "Database",
-    //         secondry : ["MySql", "MongoDB", "Firebase"]
-    //     },
-    //     {
-    //         primary : "Tools and Plateform",
-    //         secondry : ["Git & Github","Figma","Photoshop","MS Office","AWS", "DevOps"]
-    //     },
-    //     {
-    //       primary : "Programming Languages",
-    //       secondry : ["C++","Python","Javascript","Go","Dart","Java"]
-    //     }, 
-    //     {
-    //         primary : "Computer Science",
-    //         secondry : ["Machine Learning","Operating System","Network and Communication", "DBMS","Compiler Design"]
-    //     },
-    //     {
-    //         primary: "Cyber Security",
-    //         secondry : ["XSS", "SQL Injection","Helmet js"]
-    //     }
        
-    // ]
+    ]
+
     return (
         <div className="skills">
             <Navbar/>

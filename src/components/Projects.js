@@ -16,34 +16,38 @@ const projects = [
         technology : "Nodejs, Expressjs, ejs, MongoDB, pdfjs, SASS",
         address: "https://deto.desync.in"
     },
+
     {
-        name : "DeSync Blogs",
-        about : "This blog website where I write blogs, notes related to various topics like Cyber Security, Computer Networks, Data Structure and Algorithm and many more things.",
+        name : "Bubble Grader",
+        about : "Deto is a designing app that helps you in design things easily like ID Cards, Business Card, Question Paper and more",
         thumbnail : deto,
-        technology : "Nodejs, Expressjs, MongoDB, SASS, HTML, CSS",
-        address: "https://blog.desync.in"
-    },  
-    {
-        name : "History",
-        about : "Search in History by Events, Date, Month, Person name, Year Range and Many more at History Timeline. Powered by DeSync Cyber Solution",
-        thumbnail : deto,
-        technology : "Nodejs, Expressjs, MongoDB, SASS, ejs, CSS",
-        address: "https://history.desync.in"
+        technology : "Nodejs, Expressjs, ejs, MongoDB, pdfjs, SASS",
+        address: "https://deto.desync.in"
     },
-    // {
-    //     name : "Student Friend",
-    //     about : "Student Friend is a web app that helps students to manage his routine, todo, notes and much more thing so student can focus on study. In student friend there is login-logout option that make student friend to use from anywhere and any device. For data management javascript localstorage api also used .",
-    //     thumbnail : sf,
-    //     technology : "Html, Css & Javascript,Nodejs, MongoDB",
-    //     address: "https://student-friend.desync.in"
-    // },
-    // {
-    //     name : "Share Link",
-    //     about : "Share Link is an online file sharing web portal where you can share your file by uploading. after uploading you will get a link and send this link to that person which person you want to share",
-    //     thumbnail : ofs,
-    //     technology : "Nodejs, MongoDB, React, Express",
-    //     address: "https://share-link.desync.in"
-    // },
+   
+    {
+        name : "School Website of R K International School",
+        about : "Deto is a designing app that helps you in design things easily like ID Cards, Business Card, Question Paper and more",
+        thumbnail : deto,
+        technology : "Nodejs, Expressjs, ejs, MongoDB, pdfjs, SASS",
+        address: "https://deto.desync.in"
+    },
+   
+    {
+        name : "Student Friend",
+        about : "Student Friend is a web app that helps students to manage his routine, todo, notes and much more thing so student can focus on study. In student friend there is login-logout option that make student friend to use from anywhere and any device. For data management javascript localstorage api also used .",
+        thumbnail : sf,
+        technology : "Html, Css & Javascript,Nodejs, MongoDB",
+        address: "https://student-friend.desync.in"
+    },
+    {
+        name : "Share Link",
+        about : "Share Link is an online file sharing web portal where you can share your file by uploading. after uploading you will get a link and send this link to that person which person you want to share",
+        thumbnail : ofs,
+        technology : "Nodejs, MongoDB, React, Express",
+        address: "https://share-link.desync.in"
+    },
+  
     {
         name : "Snake Game",
         about : "A snake game is a game. you can play it in both PC And Mobile",
@@ -51,14 +55,7 @@ const projects = [
         thumbnail: snakeGame,
         address  :"http://snake-game.desync.in"
     }
-    // ,
-    // {
-    //     name : "Letter Box",
-    //     thumbnail : lb,
-    //     technology : "Nodejs, MongoDB, HTML, CSS",
-    //     address : "https://letter-box.desync.in/",
-    //     about : "Letter box is a free api that can you use to get message and retrive message without writing single line of code for backend"
-    // }
+   
 ]
 
 const Project =  () => {
@@ -70,6 +67,7 @@ const Project =  () => {
             setcurrentProjectIndex(currentProjectIndex+1);
         }
     }
+
     const decreaseCurrentIndex = ()=>{
         if(currentProjectIndex === 0){
             setcurrentProjectIndex(projects.length - 1);

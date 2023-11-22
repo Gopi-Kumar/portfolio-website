@@ -1,0 +1,6 @@
+    Frontent & Backend Development- MERN Stack, PHP, SQL, SQLite, MongoDB, d3.js
+    Mobile and Desktop Development- Flutter, Electron.js, Tkinter, Firebase
+    Tools and Platform- MS Office, Git, Github, Figma, Adobe Photoshop, Docker, Linux, Mocha&Chai, NGINX, Pip 
+    Automation and Scripting- Selenium, Python, Shell, GoogleScript, Adobe Photoshop 
+    Design and Multimedia Manipulation, OpenCV, Adobe Photoshop, Figma, Openshot 
+    Subject - Data Structure and Algorithm, System Design and Analysis, Database Management System, Accountancy
