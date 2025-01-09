@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AACQ,yFAAiF;AACzF,CAAC;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;EACT,UAAU,EAAE,UAAU;EACtB,UAAU,EAAE,MAAM;EAGlB,MAAI;IACD,gBAAgB,EAAE,mFAAmF;IACrG,eAAe,EAAE,KAAK",
-"sources": ["../scss/utills.scss"],
-"names": [],
-"file": "utills.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/utills.scss"],"names":[],"mappings":"AACQ;AACR;EACI;EACA;EACA;EACA;;AAGA;EACG","file":"utills.css"}

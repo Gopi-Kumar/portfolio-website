@@ -1,12 +1,13 @@
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css";
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css';
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden; }
-  * body {
-    background-image: url("https://i.pinimg.com/originals/8c/1e/e6/8c1ee6e8d08b11c7787052a1bc7f9044.jpg");
-    background-size: cover; }
+  overflow-x: hidden;
+}
+* body {
+  background-size: cover;
+}
 
 .hero {
   display: flex;
@@ -14,104 +15,156 @@
   justify-content: center;
   align-items: center;
   margin: 0px auto;
-  min-height: 80vh; }
-  .hero section {
-    height: 100%;
-    color: white;
-    font-size: 25px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 2px 2px 5px black; }
-    .hero section:nth-child(1) {
-      align-items: flex-start;
-      padding: 20px 20px 0px 80px; }
-    .hero section:nth-child(2) {
-      align-items: flex-start;
-      margin-left: 100px; }
-    .hero section .designation {
-      font-size: 40px; }
-      .hero section .designation span {
-        color: #116FC6;
-        font-weight: 500; }
-    .hero section .social_media {
-      overflow: hidden; }
-      .hero section .social_media a {
-        color: white;
-        padding: 6px; }
-    .hero section .img_container {
-      width: 250px;
-      height: 250px;
-      overflow: hidden;
-      border: 10px solid #FF008A;
-      border-radius: 50%;
-      box-shadow: 1px 1px 10px 5px black; }
-      .hero section .img_container img {
-        width: 250px; }
+  min-height: 100%;
+}
+.hero section {
+  height: 100%;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 5px black;
+}
+.hero section:nth-child(1) {
+  align-items: flex-start;
+}
+.hero section:nth-child(2) {
+  align-items: flex-start;
+  margin-left: 100px;
+}
+.hero section .designation {
+  font-size: 40px;
+}
+.hero section .text-blue-500 {
+  color: #ff0389;
+  font-weight: 500;
+}
+.hero section .social_media {
+  padding-top: 10px;
+  overflow: hidden;
+}
+.hero section .social_media a {
+  color: white;
+  padding: 6px;
+}
+.hero section .social_media a:nth-child(2) {
+  color: #1877F2;
+}
+.hero section .social_media a:nth-child(3) {
+  color: #0077B5;
+}
+.hero section .img_container {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border: 10px solid #0099ff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 5px rgb(0, 0, 0);
+}
+.hero section .img_container img {
+  width: 250px;
+}
+.hero .about {
+  background-color: rgba(0, 0, 0, 0.504);
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.2980392157), #000000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3960784314), #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 20px 30px;
+  border-radius: 20px;
+  max-width: 590px;
+}
 
 @media only screen and (max-width: 1100px) {
   .hero section:nth-child(1) {
     flex: 2;
-    padding: 40px; }
+    padding: 40px;
+  }
   .hero section:nth-child(2) {
-    margin-left: 0px; } }
+    margin-left: 0px;
+  }
+}
 @media only screen and (max-width: 850px) {
   .hero section:nth-child(1) {
-    font-size: 20px; }
-    .hero section:nth-child(1) .designation {
-      font-size: 35px; }
+    font-size: 20px;
+  }
+  .hero section:nth-child(1) .designation {
+    font-size: 35px;
+  }
   .hero section:nth-child(2) .img_container {
     width: 250px;
-    height: 250px; }
-    .hero section:nth-child(2) .img_container img {
-      width: 250px; } }
+    height: 250px;
+  }
+  .hero section:nth-child(2) .img_container img {
+    width: 250px;
+  }
+}
 @media only screen and (max-width: 730px) {
   .hero {
     height: auto;
     padding-top: 0px;
-    flex-direction: column-reverse; }
-    .hero section {
-      padding: 0; }
-      .hero section:nth-child(2) {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 30px; } }
+    flex-direction: column-reverse;
+  }
+  .hero section {
+    padding: 0;
+  }
+  .hero section:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+}
 @media only screen and (max-width: 480px) {
   .hero section:nth-child(1) {
-    font-size: 18px; }
-    .hero section:nth-child(1) .designation {
-      font-size: 30px; }
+    font-size: 18px;
+  }
+  .hero section:nth-child(1) .designation {
+    font-size: 30px;
+  }
   .hero section:nth-child(2) {
-    padding: 20px; } }
+    padding: 20px;
+  }
+}
 @media only screen and (max-width: 400px) {
   .hero section:nth-child(1) {
     padding: 15px;
-    font-size: 18px; }
-    .hero section:nth-child(1) .designation {
-      font-size: 25px; }
+    font-size: 18px;
+  }
+  .hero section:nth-child(1) .designation {
+    font-size: 25px;
+  }
   .hero section:nth-child(2) {
-    padding: 40px; }
-    .hero section:nth-child(2) .img_container {
-      width: 200px;
-      height: 200px; }
-      .hero section:nth-child(2) .img_container img {
-        width: 200px; } }
+    padding: 40px;
+  }
+  .hero section:nth-child(2) .img_container {
+    width: 200px;
+    height: 200px;
+  }
+  .hero section:nth-child(2) .img_container img {
+    width: 200px;
+  }
+}
 @media only screen and (max-width: 300px) {
   .hero section:nth-child(1) {
     padding: 15px;
-    font-size: 18px; }
-    .hero section:nth-child(1) .designation {
-      font-size: 20px; }
+    font-size: 18px;
+  }
+  .hero section:nth-child(1) .designation {
+    font-size: 20px;
+  }
   .hero section:nth-child(2) {
-    padding: 40px; }
-    .hero section:nth-child(2) .img_container {
-      width: 200px;
-      height: 200px; }
-      .hero section:nth-child(2) .img_container img {
-        width: 200px; } }
+    padding: 40px;
+  }
+  .hero section:nth-child(2) .img_container {
+    width: 200px;
+    height: 200px;
+  }
+  .hero section:nth-child(2) .img_container img {
+    width: 200px;
+  }
+}
 
 /*# sourceMappingURL=Hero.css.map */

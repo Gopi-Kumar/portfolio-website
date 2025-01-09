@@ -3,17 +3,17 @@
     @include display_as_row_center();
     // max-width: 1200px;
     margin:0px auto;
-    min-height: 80vh;
+    min-height: 100%; 
     section{
         height:100%;
         color:$primary_text; 
         font-size: 25px;
-        padding:20px;
+        // padding:20px;
         @include  display_as_column_center();
         text-shadow: 2px 2px 5px black;
         &:nth-child(1){
             align-items: flex-start;
-            padding: 20px 20px 0px 80px;
+            // padding: 20px 20px 0px 80px;
         }
         &:nth-child(2){
            align-items:flex-start;
@@ -21,17 +21,29 @@
         }
         .designation{
             font-size: 40px;
-            span{
+         
+        }
 
-                color:$designation_text;
-                font-weight: 500;
-            }
+        .text-blue-500{
+
+            color:#ff0389;
+            font-weight: 500;
+            // border: 3px solid $navbar_profile_pic_border;
+            ;
         }
         .social_media{
             // background:$primary_background;
+            padding-top:10px;
             a{
                 color:$primary_text;
                 padding:6px;
+
+                &:nth-child(2){
+                    color:#1877F2;
+                }
+                &:nth-child(3){
+                    color:#0077B5;
+                }
             }
             overflow: hidden;
 
@@ -49,6 +61,17 @@
                 // height:300px;
             }
         }
+    }
+
+    .about{
+        background-color: rgba(0, 0, 0, 0.504);
+        background: #000046;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #0000004c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #00000065, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        padding:20px 30px;
+        border-radius: 20px;
+        max-width: 590px;
     }
 }
 
@@ -95,7 +118,7 @@
             padding:0;
             &:nth-child(2){
                 @include display_as_row_center();
-                padding:30px;
+                padding:30px; 
             }
         }
     }

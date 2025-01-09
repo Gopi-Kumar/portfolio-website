@@ -36,7 +36,9 @@
                     background-color: $navbar_profile_pic_border;
                     color:white;
                     padding:5px 20px;
-                    border-radius: 5px;
+                    border-radius: 25px;
+                    box-shadow: inset 0px 0px 10px 0px $navbar_profile_pic_border;
+                    background: radial-gradient($navbar_profile_pic_border 60%, #272f83);
                 }
             }
             

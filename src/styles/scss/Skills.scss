@@ -7,7 +7,7 @@
     // width:100vw;
     min-height:100vh;
     .skills_container{
-        min-height: 100vh;
+        // min-height: 100vh;
         color:$primary_text;
         @include display_as_row();
         align-content: center;
@@ -16,8 +16,9 @@
         flex-wrap: wrap;
         // height:100%;
         .skill_container{
-            width:400px;
-            height:280px;
+            max-width:900px;
+            padding:20px;
+            // height:280px;
             margin:10px;
         background:$dark_primary_background;
         border-radius: 4px;
@@ -28,10 +29,11 @@
                 font-size: 20px;
                 color:$navbar_profile_pic_border;
                 padding:10px;
+                font-weight: 500;
             }
             .skill_secondry{
                 @include display_as_row_center();
-                width:300px;
+                // width:300px;
                 flex-wrap:wrap;
                 p{
                     @include display_as_row_center();

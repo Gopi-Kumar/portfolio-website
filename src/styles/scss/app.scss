@@ -1,6 +1,13 @@
 @import './utills.scss';
 body{
 	.App{
+		.bg_video{
+			min-width:100vw;
+			min-height:100vh;
+			position: fixed;
+			z-index: -22;
+			top:0;
+		 }
 			// @include display_as_row();
 			.home{
 					
