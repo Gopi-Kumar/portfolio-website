@@ -24,9 +24,10 @@ const Navbar = ()=>{
            <i onClick={(e)=>dropdown(e)} className="fas fa-bars"></i>
             <nav>
                 <li  onClick={(e) => {displayPage("home")}}>Home</li>
-                <li onClick={(e) => displayPage("skills")}>Skills</li>
+                <li onClick={(e) => displayPage("skills")}>My Skills</li>
                 <li onClick={(e) => displayPage("projects")}>Projects</li>
                 <li onClick={(e) => displayPage("certificates")}>Certifications</li>
+                <li onClick={(e) => displayPage("contact")}>Contact Me</li>
                 <li> <a href="/resume.pdf" target="_blank">My Resume</a></li>
 
                 {/* <li>Contact</li>P

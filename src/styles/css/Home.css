@@ -10,7 +10,6 @@
 }
 
 body .home {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: rgba(2, 6, 63, 0.7450980392);

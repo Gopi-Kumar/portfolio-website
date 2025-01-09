@@ -12,7 +12,7 @@
 .certificates {
   width: 100%;
   background-color: rgba(0, 1, 18, 0.6156862745);
-  height: 100vh;
+  height: 10 0vh;
 }
 .certificates .certificates_container {
   display: flex;

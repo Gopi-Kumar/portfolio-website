@@ -4,7 +4,7 @@
     // overflow: hidden;
         // background: red;
     .home{
-        height: 100vh;
+        // height: 100vh;
         @include  display_as_column();
         background-color: $primary_background;
         .home_background{

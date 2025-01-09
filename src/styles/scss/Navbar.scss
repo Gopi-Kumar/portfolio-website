@@ -1,6 +1,6 @@
 @import './utills.scss';
 .navbar{
-    width:100vw;
+    // width:100vw;
     top:0;
     @include display_as_row_space_between();
     color:$primary_text;

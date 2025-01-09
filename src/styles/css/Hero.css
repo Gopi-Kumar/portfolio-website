@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   margin: 0px auto;
-  min-height: 100%;
+  min-height: 90vh;
 }
 .hero section {
   height: 100%;
@@ -70,7 +70,7 @@
   background-color: rgba(0, 0, 0, 0.504);
   background: #000046; /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.2980392157), #000000); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3960784314), #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0941176471), rgba(0, 0, 0, 0.5529411765)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px 30px;
   border-radius: 20px;
   max-width: 590px;

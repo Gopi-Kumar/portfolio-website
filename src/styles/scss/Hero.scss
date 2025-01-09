@@ -3,7 +3,7 @@
     @include display_as_row_center();
     // max-width: 1200px;
     margin:0px auto;
-    min-height: 100%; 
+    min-height: 90vh; 
     section{
         height:100%;
         color:$primary_text; 
@@ -67,7 +67,7 @@
         background-color: rgba(0, 0, 0, 0.504);
         background: #000046;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to bottom, #0000004c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #00000065, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to bottom, #00000018, #0000008d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
         padding:20px 30px;
         border-radius: 20px;

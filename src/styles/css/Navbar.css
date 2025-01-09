@@ -10,7 +10,6 @@
 }
 
 .navbar {
-  width: 100vw;
   top: 0;
   display: flex;
   flex-direction: row;

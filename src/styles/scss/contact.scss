@@ -1,26 +1,167 @@
 @import './utills.scss';
-.contact{
-    width: 100vw;
-    height: 100vh;
-    overflow:hidden;
-    background:$primary_background; 
-    .contact_container{
-        width: 100vw;
-        @include display_as_row();
-        flex-wrap: wrap;
-        .message{
-            flex:1;
-            min-width:300px;
-            @include display_as_column_center();
-            .message__form{
-                width: 350px;
-                @include display_as_column_center();
-                
+@import './utills.scss';
+
+.contact {
+    min-height: 100vh;
+    background: $primary_background;
+
+    .contact_container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+
+        .contact_content {
+            background: $dark_primary_background;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+            .contact_message {
+                text-align: center;
+                color: $primary_text;
+
+                h2 {
+                    font-size: 2.2rem;
+                    margin-bottom: 30px;
+                    background: linear-gradient(45deg, $primary_text, $golden_color);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .fun_message {
+                    margin: 30px 0;
+                    
+                    p {
+                        font-size: 1.2rem;
+                        margin-bottom: 20px;
+                    }
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 20px 0;
+
+                        li {
+                            font-size: 1.1rem;
+                            margin: 15px 0;
+                            transition: transform 0.3s ease;
+
+                            &:hover {
+                                transform: translateX(10px);
+                            }
+                        }
+                    }
+
+                    .highlight {
+                        color: $golden_color;
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                        margin: 30px 0;
+                    }
+                }
+
+                .contact_details {
+                    @include display_as_column();
+                    align-items: center;
+                    gap: 20px;
+                    margin: 40px 0;
+
+                    .contact_item {
+                        @include display_as_row();
+                        align-items: center;
+                        gap: 15px;
+                        font-size: 1.1rem;
+
+                        i {
+                            color: $golden_color;
+                            font-size: 1.3rem;
+                        }
+
+                        &:hover {
+                            transform: translateX(10px);
+                            transition: transform 0.3s ease;
+                        }
+                    }
+                }
+
+                .cta_message {
+                    margin-top: 30px;
+                    
+                    p {
+                        font-size: 1.1rem;
+                        line-height: 1.6;
+                        margin: 10px 0;
+                    }
+
+                    .availability {
+                        margin-top: 20px;
+                        padding: 15px;
+                        background: rgba($golden_color, 0.1);
+                        border-radius: 8px;
+                        color: $golden_color;
+                        font-weight: bold;
+                    }
+                }
             }
         }
-        .social_media{
-            flex:1;
-            min-width:300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        .contact_container {
+            margin: 20px auto;
+            padding: 15px;
+
+            .contact_content {
+                padding: 30px 20px;
+
+                .contact_message {
+                    h2 {
+                        font-size: 1.8rem;
+                    }
+
+                    .fun_message {
+                        p {
+                            font-size: 1.1rem;
+                        }
+
+                        ul li {
+                            font-size: 1rem;
+                        }
+
+                        .highlight {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .contact_details {
+                        .contact_item {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact {
+        padding: 10px;
+
+        .contact_container {
+            padding: 10px;
+
+            .contact_content {
+                padding: 20px 15px;
+
+                .contact_message {
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
         }
     }
 }
