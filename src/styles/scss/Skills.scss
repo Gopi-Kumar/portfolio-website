@@ -47,6 +47,7 @@
                     padding:3px 20px;
                     margin:5px;
                     border-radius:19px;
+                    text-align: center;
                 }
             }
         }
@@ -69,7 +70,7 @@
     .skills{
         .skills_container{
             .skill_container{
-                width:70vw;
+                width:90vw;
             }
         }
     }
@@ -78,7 +79,8 @@
     .skills{
         .skills_container{
             .skill_container{
-                width:80vw;
+                width:90vw;
+                padding:10px;
             }
         }
     }
@@ -90,10 +92,11 @@
             margin:3px;
             .skill_container{
                 
-                width:90vw;
-                height:35vh;
+                width:93vw;
+                // height:35vh;
                 .skill_primary{
                     padding:0px;
+                    font-size: 20px;
                 }
                 .skill_secondry{
                     font-size: 15px;
@@ -109,7 +112,7 @@
             .skill_container{
                 
                 width:100vw;
-                height:35vh;
+                // height:35vh;
                 margin-bottom:3px;
 
                 .skill_primary{

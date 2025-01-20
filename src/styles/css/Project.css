@@ -10,13 +10,13 @@
 }
 
 .projects {
-  background: rgba(2, 6, 63, 0.7450980392);
+  background: rgba(3, 37, 65, 0.74);
 }
 
 .projects_container {
   min-height: 100vh;
   padding: 20px;
-  color: white;
+  color: #F0F0F0;
 }
 .projects_container .category_selector {
   display: flex;
@@ -28,8 +28,8 @@
   padding: 10px;
 }
 .projects_container .category_selector .category_selector_button {
-  background: rgba(0, 1, 18, 0.6156862745);
-  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  color: #F0F0F0;
   border: none;
   padding: 10px 20px;
   border-radius: 25px;
@@ -54,7 +54,7 @@
   margin: 0 auto;
 }
 .projects_container .projects_contiainer .project_card {
-  background: rgba(0, 1, 18, 0.6156862745);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -85,18 +85,18 @@
 .projects_container .projects_contiainer .project_card .project_tech {
   padding: 10px 15px;
   font-size: 0.9rem;
-  color: #116FC6;
+  color: #0099ff;
   margin-top: 5px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 .projects_container .projects_contiainer .project_card .project_tech strong {
-  color: white;
+  color: #F0F0F0;
 }
 .projects_container .projects_contiainer .project_card .project_link {
   margin: 15px;
   padding: 10px 20px;
-  background: rgb(18, 18, 99);
-  color: white;
+  background: rgb(15, 15, 70);
+  color: #F0F0F0;
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease;

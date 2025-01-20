@@ -19,7 +19,7 @@
 }
 .hero section {
   height: 100%;
-  color: white;
+  color: #F0F0F0;
   font-size: 25px;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@
   overflow: hidden;
 }
 .hero section .social_media a {
-  color: white;
+  color: #F0F0F0;
   padding: 6px;
 }
 .hero section .social_media a:nth-child(2) {
@@ -61,7 +61,6 @@
   overflow: hidden;
   border: 10px solid #0099ff;
   border-radius: 50%;
-  box-shadow: 1px 1px 10px 5px rgb(0, 0, 0);
 }
 .hero section .img_container img {
   width: 250px;
@@ -69,11 +68,13 @@
 .hero .about {
   background-color: rgba(0, 0, 0, 0.504);
   background: #000046; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0.2980392157), #000000); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0941176471), rgba(0, 0, 0, 0.5529411765)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5529411765)); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5529411765)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 20px 30px;
   border-radius: 20px;
   max-width: 590px;
+  max-height: 350px;
+  margin: 10px 20px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -122,10 +123,10 @@
     font-size: 18px;
   }
   .hero section:nth-child(1) .designation {
-    font-size: 30px;
+    font-size: 25px;
   }
   .hero section:nth-child(2) {
-    padding: 20px;
+    padding: 10px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -136,15 +137,12 @@
   .hero section:nth-child(1) .designation {
     font-size: 25px;
   }
-  .hero section:nth-child(2) {
-    padding: 40px;
-  }
   .hero section:nth-child(2) .img_container {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
   }
   .hero section:nth-child(2) .img_container img {
-    width: 200px;
+    width: 230px;
   }
 }
 @media only screen and (max-width: 300px) {

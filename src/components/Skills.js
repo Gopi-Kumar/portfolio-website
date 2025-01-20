@@ -34,7 +34,7 @@ const Skills = () => {
         {
             primary: "Database & Data Management",
             secondary: [
-                "SQL Databases (MySQL, SQLite, PostgreSQL)",
+                "SQL Databases (MySQL, SQLite)",
                 "NoSQL (MongoDB, Firebase Realtime DB)",
                 "Database Design & Architecture",
                 "Query Optimization",

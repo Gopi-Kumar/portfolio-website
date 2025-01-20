@@ -11,7 +11,7 @@
 
 .certificates {
   width: 100%;
-  background-color: rgba(0, 1, 18, 0.6156862745);
+  background-color: rgba(0, 0, 0, 0.6);
   height: 10 0vh;
 }
 .certificates .certificates_container {
@@ -34,14 +34,14 @@
 .certificates .certificates_container .list .button {
   width: 400px;
   height: 50px;
-  background-color: rgb(18, 18, 99);
-  color: white;
+  background-color: rgb(15, 15, 70);
+  color: #F0F0F0;
   margin-top: 5px;
   font-size: 15px;
   padding: 8px 10px;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0, 1, 18, 0.6156862745);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -49,7 +49,7 @@
   text-align: center;
 }
 .certificates .certificates_container .list .button:hover {
-  box-shadow: -2px -2px 3px rgba(0, 1, 18, 0.6156862745) inset;
+  box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.6) inset;
 }
 
 @media only screen and (max-width: 1050px) {

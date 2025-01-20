@@ -12,11 +12,11 @@
 body .home {
   display: flex;
   flex-direction: column;
-  background-color: rgba(2, 6, 63, 0.7450980392);
+  background-color: rgba(3, 37, 65, 0.74);
 }
 body .home .home_background {
   position: absolute;
-  background: rgba(0, 1, 18, 0.6156862745);
+  background: rgba(0, 0, 0, 0.6);
   width: 100vw;
   height: 100vh;
   z-index: -1;
@@ -25,7 +25,7 @@ body .home .home_background .triangle_at_corner {
   position: absolute;
   width: 100vw;
   height: 500px;
-  background: rgba(2, 6, 63, 0.7450980392);
+  background: rgba(3, 37, 65, 0.74);
   bottom: -300px;
   transform: rotate(25deg);
   left: -200px;
