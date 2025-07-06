@@ -1,95 +1,270 @@
 @import './utills.scss';
-.navbar{
-    // width:100vw;
-    position: sticky;
-    top:0;
-    
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     @include display_as_row_space_between();
-    color:$primary_text;
-    .name{
-        font-size: 20px;
-        padding:20px;
-        font-weight: 400;
-    }
-    i{
-        display:none;
-        font-size:25px;
-        padding:20px;
-        
+    color: $primary_text;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    
+    &.scrolled {
+        background: rgba(0, 0, 0, 0.95);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
     }
     
-    nav{
+    .name {
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 20px 0;
+        background: $gradient_primary;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    
+    .mobile-menu-toggle {
+        display: none;
+        font-size: 1.5rem;
+        padding: 20px 0;
+        cursor: pointer;
+        color: $primary_text;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: $navbar_profile_pic_border;
+            transform: scale(1.1);
+        }
+        
+        &.active {
+            color: $golden_color;
+        }
+    }
+    
+    nav {
         @include display_as_row_center();
-        li{
-            font-size:17px;
+        gap: 10px;
+        
+        li {
+            font-size: 1rem;
+            font-weight: 500;
             list-style: none;
-            padding:8px 15px; 
-            // background:red;
-            border-bottom:3px solid transparent;
+            padding: 12px 18px;
+            border-radius: 8px;
             cursor: pointer;
-            &:hover{
-                border-bottom:3px solid $navbar_profile_pic_border;
+            transition: all 0.3s ease;
+            position: relative;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 0;
+                height: 2px;
+                background: $navbar_profile_pic_border;
+                transition: all 0.3s ease;
+                transform: translateX(-50%);
             }
-           
-            &:last-child{
-                border:none;
-                a{
-                    text-decoration: none;
-                    background-color: $navbar_profile_pic_border;
-                    color:white;
-                    padding:5px 20px;
-                    border-radius: 25px;
-                    box-shadow: inset 0px 0px 10px 0px $navbar_profile_pic_border;
-                    background: radial-gradient($navbar_profile_pic_border 60%, #272f83);
+            
+            &:hover {
+                background: rgba(255, 255, 255, 0.1);
+                transform: translateY(-2px);
+                
+                &::before {
+                    width: 80%;
                 }
             }
             
-        }
-        .active{
-            border-bottom:3px solid $navbar_profile_pic_border;
+            &.active {
+                background: rgba(0, 153, 255, 0.2);
+                
+                &::before {
+                    width: 80%;
+                }
+            }
+            
+            &:last-child {
+                margin-left: 10px;
+                
+                &::before {
+                    display: none;
+                }
+                
+                a {
+                    @include button-primary();
+                    padding: 8px 20px;
+                    font-size: 0.9rem;
+                    text-decoration: none;
+                    display: inline-block;
+                    border-radius: 20px;
+                    
+                    &:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 8px 20px rgba(0, 153, 255, 0.4);
+                    }
+                }
+            }
         }
     }
 }
 
-@media only screen and (max-width:835px){
-    .navbar{
+// Mobile menu styles
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 0 15px;
         
-        .name{
-            font-size:20px;
+        .name {
+            font-size: 1.2rem;
+            padding: 15px 0;
         }
-        nav{
+        
+        .mobile-menu-toggle {
+            display: block;
+            padding: 15px 0;
+        }
+        
+        nav {
             position: fixed;
-            left:0;
-            top:0;
-            z-index: 234234;
-            display:none;
-            top:0;
-            left:0;
-            flex-direction:column;
-            width:250px;
-            height:100vh;
-            background:$dark_primary_background;
-            background-color:rgba(0, 0, 0, 0.9) ; 
-            border-right:5px solid black;
-            box-shadow:0px 2px 10px 2px $designation_text;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            flex-direction: column;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             
-        }
-        i{
-            display:block;
-            padding:20px;
-            cursor:pointer;
+            &.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            li {
+                width: 100%;
+                text-align: center;
+                padding: 15px 20px;
+                margin: 5px 0;
+                font-size: 1.1rem;
+                
+                &:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                    transform: translateX(10px);
+                }
+                
+                &::before {
+                    display: none;
+                }
+                
+                &:last-child {
+                    margin: 20px 20px 0;
+                    
+                    a {
+                        width: 100%;
+                        padding: 12px 20px;
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
     }
 }
-@media only screen and (max-width:370px){
-   
-}
-    @media only screen and (max-width:300px){
-        .navbar{
-        i{
-            padding:10px;
-            z-index: 23;
-            font-size: 20px;
+
+// Tablet adjustments
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .navbar {
+        padding: 0 20px;
+        
+        .name {
+            font-size: 1.3rem;
+        }
+        
+        nav {
+            li {
+                font-size: 0.9rem;
+                padding: 10px 15px;
+            }
         }
     }
+}
+
+// Small mobile devices
+@media only screen and (max-width: 480px) {
+    .navbar {
+        padding: 0 15px;
+        
+        .name {
+            font-size: 1.1rem;
+            padding: 12px 0;
+        }
+        
+        .mobile-menu-toggle {
+            font-size: 1.3rem;
+            padding: 12px 0;
+        }
+        
+        nav {
+            li {
+                font-size: 1rem;
+                padding: 12px 15px;
+                
+                &:last-child a {
+                    padding: 10px 15px;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+// Animation for mobile menu icon
+.mobile-menu-toggle {
+    .fa-bars, .fa-times {
+        transition: opacity 0.3s ease;
+    }
+    
+    &.active {
+        .fa-bars {
+            opacity: 0;
+        }
+        
+        .fa-times {
+            opacity: 1;
+        }
+    }
+    
+    &:not(.active) {
+        .fa-bars {
+            opacity: 1;
+        }
+        
+        .fa-times {
+            opacity: 0;
+        }
+    }
+}
+
+// Smooth scroll offset for fixed navbar
+html {
+    scroll-padding-top: 80px;
 }

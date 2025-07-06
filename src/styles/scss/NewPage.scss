@@ -1,37 +1,166 @@
 @import './utills.scss';
 
 .next_page {
-    position:fixed;
-    bottom:50px;
-    right:50px;
-    background-color: $dark_primary_background;
-    width:55px;
-    height: 55px;
-    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: $gradient_primary;
+    width: 60px;
+    height: 60px;
     @include display_as_row_center();
     border-radius: 50%;
-    border:5px solid rgba(255, 255, 255, 0.73); 
     cursor: pointer;
-    box-shadow:2px 2px 10px 2px $navbar_profile_pic_border;
-    animation: animateArrow 1s infinite linear;
-    i{
-        color:white;
-        font-size:25px;
+    transition: all 0.3s ease;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    
+    &::before {
+        content: '';
+        position: absolute;
+        inset: -2px;
+        background: conic-gradient(
+            from 0deg,
+            $navbar_profile_pic_border,
+            $golden_color,
+            $accent_color,
+            $navbar_profile_pic_border
+        );
+        border-radius: 50%;
+        z-index: -1;
+        animation: rotate 3s linear infinite;
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 2px;
+        background: $gradient_primary;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    
+    i {
+        color: white;
+        font-size: 1.4rem;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+    
+    &:hover {
+        transform: scale(1.1) translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 153, 255, 0.4);
         
+        i {
+            transform: translateX(3px);
+        }
+    }
+    
+    &:active {
+        transform: scale(0.95) translateY(-3px);
+    }
+    
+    // Pulsing animation
+    &.pulse {
+        animation: pulse-button 2s infinite;
     }
 }
 
-
-@keyframes animateArrow {
-    0%{
-        box-shadow:2px 2px 10px 2px $navbar_profile_pic_border;
+// Keyframe animations
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
     }
+}
 
-    50%{
-        box-shadow:-2px -2px 10px 2px $navbar_profile_pic_border;
+@keyframes pulse-button {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
+    50% {
+        box-shadow: 0 8px 25px rgba(0, 153, 255, 0.6);
+    }
+}
 
-    100%{
-        box-shadow:2px 2px 10px 2px $navbar_profile_pic_border;
+// Floating animation variant
+.next_page.floating {
+    animation: float-button 3s ease-in-out infinite;
+}
+
+@keyframes float-button {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+// Responsive adjustments
+@media only screen and (max-width: 768px) {
+    .next_page {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        
+        i {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .next_page {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        
+        i {
+            font-size: 1rem;
+        }
+    }
+}
+
+// Hide on very small screens to avoid interference
+@media only screen and (max-width: 360px) {
+    .next_page {
+        display: none;
+    }
+}
+
+// Accessibility improvements
+.next_page:focus {
+    outline: 2px solid $accent_color;
+    outline-offset: 4px;
+}
+
+// Alternative designs
+.next_page.minimal {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    &::before,
+    &::after {
+        display: none;
+    }
+    
+    &:hover {
+        background: rgba(0, 0, 0, 0.8);
+        border-color: $navbar_profile_pic_border;
+    }
+}
+
+.next_page.glow {
+    box-shadow: 
+        0 0 20px rgba(0, 153, 255, 0.3),
+        0 4px 15px rgba(0, 0, 0, 0.3);
+    
+    &:hover {
+        box-shadow: 
+            0 0 30px rgba(0, 153, 255, 0.5),
+            0 8px 25px rgba(0, 0, 0, 0.4);
     }
 }

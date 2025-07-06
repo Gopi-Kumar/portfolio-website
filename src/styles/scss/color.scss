@@ -1,21 +1,43 @@
-$dark_primary_background : #0001129d;
-$primary_background: #02063fbe;
+// Modern color palette with better contrast and accessibility
+$dark_primary_background: rgba(0, 0, 0, 0.75);
+$primary_background: rgba(3, 37, 65, 0.8);
 $navbar_profile_pic_border: #0099ff;
-$primary_text : white;
-$secondry_text : black;
-$designation_text : #116FC6;
-$skill_name_background : rgb(18, 18, 99);
-$golden_color :#ff0389 ;
+$primary_text: #ffffff;
+$secondary_text: #a0a0a0;
+$designation_text: #00509e;
+$skill_name_background: rgba(15, 15, 70, 0.9);
+$golden_color: #ff6b35;
 
+// Additional colors for better design
+$accent_color: #00d4ff;
+$success_color: #28a745;
+$warning_color: #ffc107;
+$error_color: #dc3545;
+$info_color: #17a2b8;
 
-$dark_primary_background: rgba(0, 0, 0, 0.6); // Subtle black with reduced opacity for a clean professional tone
-$primary_background: rgba(3, 37, 65, 0.74); // Midnight blue with a muted effect for sophistication
-// $navbar_profile_pic_border: #0056B3; // Deep royal blue for a strong and professional vibe
-$primary_text: #F0F0F0; // Soft white for a less stark contrast
-$secondry_text: #4A4A4A; // Medium gray for a clean, polished feel
-$designation_text: #00509E; // Muted cobalt blue for elegance
-$skill_name_background: rgba(15, 15, 70, 1); // Navy-inspired blue for a subtle yet bold background
-// $golden_color: #FFC107; // Warm golden yellow for a touch of sophistication and focus\\
+// Gradient backgrounds
+$gradient_primary: linear-gradient(135deg, $navbar_profile_pic_border, $golden_color);
+$gradient_secondary: linear-gradient(135deg, $primary_background, $dark_primary_background);
+$gradient_accent: linear-gradient(135deg, $accent_color, $navbar_profile_pic_border);
+
+// Shadow colors
+$shadow_light: rgba(0, 0, 0, 0.1);
+$shadow_medium: rgba(0, 0, 0, 0.2);
+$shadow_dark: rgba(0, 0, 0, 0.4);
+
+// Hover states
+$hover_overlay: rgba(255, 255, 255, 0.1);
+$hover_shadow: rgba(0, 153, 255, 0.3);
+
+// Background variations
+$card_background: rgba(255, 255, 255, 0.05);
+$card_hover_background: rgba(255, 255, 255, 0.08);
+$input_background: rgba(255, 255, 255, 0.1);
+
+// Border colors
+$border_light: rgba(255, 255, 255, 0.1);
+$border_medium: rgba(255, 255, 255, 0.2);
+$border_accent: $navbar_profile_pic_border;
 
 
 
