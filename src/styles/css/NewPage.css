@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 14px;
@@ -19,10 +24,63 @@ html {
 body {
   background-size: cover;
   font-family: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  font-weight: 400;
   line-height: 1.6;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Red Hat Display", "Jost", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f5f7fa;
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-size: clamp(3rem, 2.5rem + 3vw, 4.5rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
+}
+
+h3 {
+  font-size: clamp(2rem, 1.7rem + 1.5vw, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #b8bcc8;
+  line-height: 1.8;
+}
+
+a {
+  color: #00d4ff;
+  text-decoration: none;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+a:hover {
+  color: #1ae0ff;
+  opacity: 0.9;
 }
 
 @keyframes fadeInUp {
@@ -138,7 +196,7 @@ body {
 }
 
 *:focus {
-  outline: 2px solid #0099ff;
+  outline: 2px solid #00a8ff;
   outline-offset: 2px;
 }
 
@@ -150,7 +208,7 @@ a[href^="#"] {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: linear-gradient(135deg, #0099ff, #ff6b35);
+  background: linear-gradient(135deg, #00a8ff 0%, #0077ff 100%);
   width: 60px;
   height: 60px;
   display: flex;
@@ -167,7 +225,7 @@ a[href^="#"] {
   content: "";
   position: absolute;
   inset: -2px;
-  background: conic-gradient(from 0deg, #0099ff, #ff6b35, #00d4ff, #0099ff);
+  background: conic-gradient(from 0deg, #00a8ff, #ff6b35, #00d4ff, #00a8ff);
   border-radius: 50%;
   z-index: -1;
   animation: rotate 3s linear infinite;
@@ -176,7 +234,7 @@ a[href^="#"] {
   content: "";
   position: absolute;
   inset: 2px;
-  background: linear-gradient(135deg, #0099ff, #ff6b35);
+  background: linear-gradient(135deg, #00a8ff 0%, #0077ff 100%);
   border-radius: 50%;
   z-index: -1;
 }
@@ -268,7 +326,7 @@ a[href^="#"] {
 }
 .next_page.minimal:hover {
   background: rgba(0, 0, 0, 0.8);
-  border-color: #0099ff;
+  border-color: #00a8ff;
 }
 
 .next_page.glow {
@@ -277,5 +335,3 @@ a[href^="#"] {
 .next_page.glow:hover {
   box-shadow: 0 0 30px rgba(0, 153, 255, 0.5), 0 8px 25px rgba(0, 0, 0, 0.4);
 }
-
-/*# sourceMappingURL=NewPage.css.map */

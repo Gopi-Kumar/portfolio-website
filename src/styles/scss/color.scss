@@ -1,43 +1,66 @@
-// Modern color palette with better contrast and accessibility
-$dark_primary_background: rgba(0, 0, 0, 0.75);
-$primary_background: rgba(3, 37, 65, 0.8);
-$navbar_profile_pic_border: #0099ff;
-$primary_text: #ffffff;
-$secondary_text: #a0a0a0;
-$designation_text: #00509e;
-$skill_name_background: rgba(15, 15, 70, 0.9);
+// ============================================
+// ENHANCED COLOR SYSTEM - Modern & Accessible
+// ============================================
+
+// Primary Brand Colors
+$dark_primary_background: rgba(0, 0, 0, 0.85);
+$primary_background: rgba(3, 37, 65, 0.85);
+$navbar_profile_pic_border: #00a8ff;
 $golden_color: #ff6b35;
-
-// Additional colors for better design
 $accent_color: #00d4ff;
-$success_color: #28a745;
-$warning_color: #ffc107;
-$error_color: #dc3545;
-$info_color: #17a2b8;
 
-// Gradient backgrounds
-$gradient_primary: linear-gradient(135deg, $navbar_profile_pic_border, $golden_color);
-$gradient_secondary: linear-gradient(135deg, $primary_background, $dark_primary_background);
-$gradient_accent: linear-gradient(135deg, $accent_color, $navbar_profile_pic_border);
+// Text Colors - Improved Hierarchy
+$primary_text: #ffffff;
+$secondary_text: #b8bcc8;
+$tertiary_text: #8a8f9e;
+$designation_text: #00a8ff;
+$heading_text: #f5f7fa;
 
-// Shadow colors
-$shadow_light: rgba(0, 0, 0, 0.1);
-$shadow_medium: rgba(0, 0, 0, 0.2);
-$shadow_dark: rgba(0, 0, 0, 0.4);
+// Background Variations
+$skill_name_background: rgba(15, 15, 70, 0.92);
+$card_background: rgba(255, 255, 255, 0.06);
+$card_hover_background: rgba(255, 255, 255, 0.1);
+$input_background: rgba(255, 255, 255, 0.08);
+$glass_background: rgba(255, 255, 255, 0.03);
 
-// Hover states
-$hover_overlay: rgba(255, 255, 255, 0.1);
-$hover_shadow: rgba(0, 153, 255, 0.3);
+// Semantic Colors
+$success_color: #2ecc71;
+$warning_color: #f39c12;
+$error_color: #e74c3c;
+$info_color: #3498db;
 
-// Background variations
-$card_background: rgba(255, 255, 255, 0.05);
-$card_hover_background: rgba(255, 255, 255, 0.08);
-$input_background: rgba(255, 255, 255, 0.1);
+// Gradient Backgrounds
+$gradient_primary: linear-gradient(135deg, #00a8ff 0%, #0077ff 100%);
+$gradient_secondary: linear-gradient(135deg, rgba(3, 37, 65, 0.95) 0%, rgba(0, 0, 0, 0.9) 100%);
+$gradient_accent: linear-gradient(135deg, #00d4ff 0%, #00a8ff 50%, #0077ff 100%);
+$gradient_warm: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+$gradient_hero: linear-gradient(135deg, rgba(0, 168, 255, 0.1) 0%, rgba(255, 107, 53, 0.1) 100%);
 
-// Border colors
-$border_light: rgba(255, 255, 255, 0.1);
-$border_medium: rgba(255, 255, 255, 0.2);
+// Shadow System
+$shadow_xs: 0 1px 2px rgba(0, 0, 0, 0.1);
+$shadow_sm: 0 2px 4px rgba(0, 0, 0, 0.15);
+$shadow_md: 0 4px 8px rgba(0, 0, 0, 0.2);
+$shadow_lg: 0 8px 16px rgba(0, 0, 0, 0.25);
+$shadow_xl: 0 12px 24px rgba(0, 0, 0, 0.3);
+$shadow_glow: 0 0 20px rgba(0, 168, 255, 0.3);
+$shadow_glow_warm: 0 0 20px rgba(255, 107, 53, 0.3);
+
+// Hover & Interactive States
+$hover_overlay: rgba(255, 255, 255, 0.12);
+$hover_shadow: rgba(0, 168, 255, 0.4);
+$active_overlay: rgba(255, 255, 255, 0.15);
+$focus_ring: 0 0 0 3px rgba(0, 168, 255, 0.3);
+
+// Border Colors
+$border_light: rgba(255, 255, 255, 0.08);
+$border_medium: rgba(255, 255, 255, 0.15);
+$border_strong: rgba(255, 255, 255, 0.25);
 $border_accent: $navbar_profile_pic_border;
+
+// Overlay Colors
+$overlay_dark: rgba(0, 0, 0, 0.6);
+$overlay_darker: rgba(0, 0, 0, 0.8);
+$overlay_light: rgba(255, 255, 255, 0.05);
 
 
 

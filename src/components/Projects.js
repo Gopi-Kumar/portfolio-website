@@ -4,76 +4,72 @@ import '../styles/css/Project.css';
 import NextPage from './shared/NextPage';
 const projects = [
     {
-        name: "KnowledgeKnot",
-        about: "KnowledgeKnot is an educational platform offering computer science tutorials, coding resources, revision notes, solved papers, and technical articles.",
-        thumbnail: "https://prabhattara.desync.in/images/pt-school-thumbnail.png",
+        id: "face-crop-ai",
+        name: "FaceCropAI",
+        about: "Create perfect passport photos instantly using AI-powered face detection. Upload photos, select your desired shape, and get professional quality passport photos in seconds.",
+        thumbnail: "/images/products/face-crop-ai.png",
         category: "web app",
-        technology: "Next.js, SASS, MongoDB, KaTeX, D3.js",
-        address: "https://knowledgeknot.desync.in"
+        technology: "AI Face Detection, Canvas API, Image Processing",
+        address: "https://face-crop-ai.desync.in",
+        youtubeVideoId: "dRlQAFQSRk8",
+        features: [
+            "Automatic Face Detection",
+            "Customizable Cropping",
+            "High-Quality Output",
+            "User-Friendly Interface"
+        ]
     },
     {
-        name: "Deto",
-        about: "Deto is a design app for creating ID cards, business cards, question papers, and more with bulk upload and photo organization features.",
-        thumbnail: "https://deto.desync.in/images/deto-thumbnail.png",
-        category: "web app",
-        technology: "Node.js, Express.js, EJS, MongoDB, PDF.js, SASS",
-        address: "https://deto.desync.in"
-    },
-    {
-        name: "GameZone",
-        about: "GameZone is a browser-based platform offering classic games like Snake and Tetris, all accessible in a single place.",
-        thumbnail: "https://gamezone.desync.in/images/gamezone-thumbnail.png",
-        category: "web app",
-        technology: "Next.js, MongoDB, SASS, HTML5 Canvas",
-        address: "http://gamezone.desync.in"
-    },
-    {
+        id: "idsnapper",
         name: "IDSnapper",
-        about: "IDSnapper simplifies ID card creation by automatically renaming photos and organizing them into date-based folders.",
-        thumbnail: "https://idsnapper.desync.in/images/idsnapper-thumbnail.png",
+        about: "Automatic serial renaming app for ID card makers. Streamline photo organization with auto-naming, date-based folders, and intelligent file management to reduce errors and save valuable time.",
+        thumbnail: "/images/products/idsnapper.png",
         category: "mobile app",
-        technology: "Kotlin, Firebase, OpenCV, Android Studio, Material UI",
-        address: "https://idsnapper.desync.in"
+        technology: "Kotlin, Firebase, Camera2 API, File Management",
+        address: "https://play.google.com/store/apps/details?id=com.desync.idsnapper",
+        youtubeVideoId: "IA5YmwcxDTY",
+        features: [
+            "Automatic Sequential Naming (1.jpg, 2.jpg, etc.)",
+            "Smart Camera with Grid Alignment",
+            "Quick Preview & Thumbnail Navigation",
+            "One-tap ZIP & Share to WhatsApp",
+            "Fast File Manager with Delete/Rename"
+        ]
     },
     {
-        name: "FormScanner",
-        about: "FormScanner allows data entry into Excel by scanning forms with your phone camera, offering a preview in the web portal.",
-        thumbnail: "",
+        id: "pdf2flipbook",
+        name: "PDF2Flipbook",
+        about: "Convert PDF files into interactive flipbooks with page-turning effects. Customize the look and feel to match your brand.",
+        thumbnail: "/images/products/pdf-2-flipbook.png",
         category: "web app",
-        technology: "Node.js, EJS, Google OCR API, Socket.io",
-        address: "https://formscanner.desync.in"
+        technology: "PDF.js, Turn.js, JavaScript, CSS Animations",
+        address: "https://pdf2flipbook.desync.in",
+        youtubeVideoId: null,
+        features: [
+            "Interactive Page Turning",
+            "Custom Branding",
+            "Multiple Output Formats",
+            "High-Quality Rendering"
+        ]
     },
     {
-        name: "HeavyLoadPro",
-        about: "HeavyLoadPro offers logistics solutions for managing trucking operations, load tracking, and efficient freight management.",
-        thumbnail: "https://heavyloadpro.desync.in/images/heavyloadpro-thumbnail.png",
-        category: "mobile app",
-        technology: "Kotlin, Firebase, Gradle, Android Studio, AdMob",
-        address: "https://heavyloadpro.desync.in"
-    },
-    {
-        name: "IGNOU BCA Books & More",
-        about: "This app provides resources like books, notes, and assignments for IGNOU BCA students in an organized and accessible format.",
-        thumbnail: "https://ignoubooks.desync.in/images/ignou-books-thumbnail.png",
-        category: "mobile app",
-        technology: "React Native, Firebase, Node.js, MongoDB",
-        address: "https://ignoubooks.desync.in"
-    },
-    {
-        name: "School Website (RKIS)",
-        about: "A responsive website for R K International School featuring information about academics, admissions, and contact details.",
-        thumbnail: "https://rkinternational.desync.in/images/rk-school-thumbnail.png",
+        id: "BulkImageResize",
+        name: "BulkImageResize",
+        about: "Easily resize, crop, enhance, watermark, and batch rename images in bulk. Supports drag-and-drop, folder upload, and advanced processing options for web and mobile.",
+        thumbnail: "/images/products/bulk-image-resize.png",
         category: "web app",
-        technology: "Node.js, Express.js, MongoDB, EJS, Bootstrap",
-        address: "https://rkinternational.desync.in"
-    },
-    {
-        name: "School Website(PTVN)",
-        about: "A static website for Prabhat Tara Vidya Niketan that showcases school programs, facilities, mdd, events, and admission guidelines.",
-        thumbnail: "https://prabhattara.desync.in/images/pt-school-thumbnail.png",
-        category: "web app",
-        technology: "Node.js, MongoDB, Bootstrap, SASS",
-        address: "https://prabhattara.desync.in"
+        technology: "Canvas API, File API, Image Processing, Web Workers",
+        address: "https://bulkimageresize.desync.in",
+        youtubeVideoId: null,
+        features: [
+            "Bulk Image Resizing",
+            "Drag & Drop and Folder Upload",
+            "Advanced Cropping & Filters",
+            "Watermark Addition",
+            "Batch Renaming",
+            "Responsive & Mobile Optimized",
+            "Progressive Loading & Stats"
+        ]
     }
 ];
 
@@ -116,6 +112,7 @@ const Project = () => {
                                     src={project.thumbnail}
                                     alt={project.name}
                                     className="project_img"
+                                    loading="lazy"
                                 />
                                 <h2 className="project_title">{project.name}</h2>
                                 <p className="project_description">{project.about}</p>

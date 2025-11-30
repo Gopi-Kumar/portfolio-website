@@ -1,4 +1,4 @@
-@import './utills.scss';
+@use './utills' as *;
 
     body{
     // overflow: hidden;
@@ -33,11 +33,59 @@
     }
 }
 
-@media only screen and (max-width:800px){
-    .home_background{
-        .triangle_at_corner{
-            top: 500px;
-            left:0;
+@media only screen and (max-width: 1024px) {
+    .home {
+        .home_background {
+            .triangle_at_corner {
+                height: 400px;
+                bottom: -250px;
+                left: -150px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home {
+        min-height: 100vh;
+        
+        .home_background {
+            .triangle_at_corner {
+                height: 350px;
+                bottom: -200px;
+                left: -100px;
+                transform: rotate(20deg);
+            }
+        }
+        
+        .bg_video {
+            object-fit: cover;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home {
+        .home_background {
+            .triangle_at_corner {
+                height: 300px;
+                bottom: -180px;
+                left: -80px;
+                transform: rotate(18deg);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home {
+        .home_background {
+            .triangle_at_corner {
+                height: 250px;
+                bottom: -150px;
+                left: -50px;
+                transform: rotate(15deg);
+            }
         }
     }
 }

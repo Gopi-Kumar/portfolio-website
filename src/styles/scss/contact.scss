@@ -1,9 +1,9 @@
-@import './utills.scss';
-@import './utills.scss';
+@use './utills' as *;
 
 .contact {
     min-height: 100vh;
     background: $primary_background;
+    padding-top: 80px;
 
     .contact_container {
         max-width: 800px;
@@ -107,36 +107,156 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .contact {
         .contact_container {
-            margin: 20px auto;
-            padding: 15px;
+            max-width: 700px;
+            padding: 80px 20px 20px;
+            
+            .contact_content {
+                padding: 35px 30px;
+                
+                .contact_message {
+                    h2 {
+                        font-size: 2rem;
+                        margin-bottom: 25px;
+                    }
+                    
+                    .fun_message {
+                        p {
+                            font-size: 1.15rem;
+                        }
+                        
+                        ul li {
+                            font-size: 1.05rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        padding-top: 70px;
+        
+        .contact_container {
+            max-width: 90vw;
+            margin: 10px auto;
+            padding: 20px 12px;
 
             .contact_content {
                 padding: 30px 20px;
+                border-radius: 10px;
 
                 .contact_message {
                     h2 {
                         font-size: 1.8rem;
+                        margin-bottom: 20px;
                     }
 
                     .fun_message {
+                        margin: 25px 0;
+                        
                         p {
-                            font-size: 1.1rem;
+                            font-size: 1.05rem;
+                            margin-bottom: 15px;
                         }
 
-                        ul li {
-                            font-size: 1rem;
+                        ul {
+                            margin: 15px 0;
+                            
+                            li {
+                                font-size: 1rem;
+                                margin: 12px 0;
+                            }
                         }
 
                         .highlight {
-                            font-size: 1.2rem;
+                            font-size: 1.15rem;
+                            margin: 25px 0;
                         }
                     }
 
                     .contact_details {
+                        gap: 15px;
+                        margin: 30px 0;
+                        
                         .contact_item {
+                            font-size: 1rem;
+                            gap: 12px;
+                            -webkit-tap-highlight-color: transparent;
+                            
+                            i {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                    
+                    .cta_message {
+                        margin-top: 25px;
+                        
+                        p {
+                            font-size: 1.05rem;
+                        }
+                        
+                        .availability {
+                            margin-top: 15px;
+                            padding: 12px;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        .contact_container {
+            padding: 12px 10px;
+            
+            .contact_content {
+                padding: 25px 18px;
+                
+                .contact_message {
+                    h2 {
+                        font-size: 1.6rem;
+                        margin-bottom: 18px;
+                    }
+                    
+                    .fun_message {
+                        margin: 20px 0;
+                        
+                        p {
+                            font-size: 1rem;
+                        }
+                        
+                        ul li {
+                            font-size: 0.95rem;
+                            margin: 10px 0;
+                        }
+                        
+                        .highlight {
+                            font-size: 1.1rem;
+                            margin: 20px 0;
+                        }
+                    }
+                    
+                    .contact_details {
+                        gap: 12px;
+                        margin: 25px 0;
+                        
+                        .contact_item {
+                            font-size: 0.95rem;
+                            gap: 10px;
+                        }
+                    }
+                    
+                    .cta_message {
+                        p {
                             font-size: 1rem;
                         }
                     }
@@ -148,17 +268,114 @@
 
 @media only screen and (max-width: 480px) {
     .contact {
-        padding: 10px;
+        padding: 10px 8px;
 
         .contact_container {
-            padding: 10px;
+            padding: 10px 8px;
 
             .contact_content {
                 padding: 20px 15px;
+                border-radius: 8px;
 
                 .contact_message {
                     h2 {
                         font-size: 1.5rem;
+                        margin-bottom: 15px;
+                    }
+                    
+                    .fun_message {
+                        margin: 18px 0;
+                        
+                        p {
+                            font-size: 0.95rem;
+                            margin-bottom: 12px;
+                        }
+                        
+                        ul {
+                            margin: 12px 0;
+                            
+                            li {
+                                font-size: 0.9rem;
+                                margin: 8px 0;
+                            }
+                        }
+                        
+                        .highlight {
+                            font-size: 1.05rem;
+                            margin: 18px 0;
+                        }
+                    }
+                    
+                    .contact_details {
+                        gap: 10px;
+                        margin: 20px 0;
+                        
+                        .contact_item {
+                            font-size: 0.9rem;
+                            gap: 8px;
+                            
+                            i {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                    
+                    .cta_message {
+                        margin-top: 20px;
+                        
+                        p {
+                            font-size: 0.95rem;
+                            line-height: 1.5;
+                        }
+                        
+                        .availability {
+                            margin-top: 12px;
+                            padding: 10px;
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .contact {
+        .contact_container {
+            padding: 8px 5px;
+            
+            .contact_content {
+                padding: 18px 12px;
+                
+                .contact_message {
+                    h2 {
+                        font-size: 1.3rem;
+                        margin-bottom: 12px;
+                    }
+                    
+                    .fun_message {
+                        p {
+                            font-size: 0.9rem;
+                        }
+                        
+                        ul li {
+                            font-size: 0.85rem;
+                        }
+                        
+                        .highlight {
+                            font-size: 1rem;
+                        }
+                    }
+                    
+                    .contact_details {
+                        .contact_item {
+                            font-size: 0.85rem;
+                            
+                            i {
+                                font-size: 1rem;
+                            }
+                        }
                     }
                 }
             }

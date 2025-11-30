@@ -44,7 +44,7 @@ export default function Certificates() {
             <Navbar/>
             <div className="certificates_container">
                 <div className="img">
-                    <img src={src} alt="" />
+                    <img src={src} alt="Certificate" loading="lazy" />
                 </div>
                 <div className="list">
                    {certificates.map(cert => {

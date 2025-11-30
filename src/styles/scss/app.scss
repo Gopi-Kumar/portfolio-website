@@ -1,4 +1,4 @@
-@import './utills.scss';
+@use './utills' as *;
 
 .App {
     position: relative;

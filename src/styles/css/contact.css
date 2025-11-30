@@ -1,5 +1,4 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
-@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css';
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +10,11 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 14px;
@@ -20,10 +24,63 @@ html {
 body {
   background-size: cover;
   font-family: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  font-weight: 400;
   line-height: 1.6;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Red Hat Display", "Jost", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f5f7fa;
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-size: clamp(3rem, 2.5rem + 3vw, 4.5rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
+}
+
+h3 {
+  font-size: clamp(2rem, 1.7rem + 1.5vw, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #b8bcc8;
+  line-height: 1.8;
+}
+
+a {
+  color: #00d4ff;
+  text-decoration: none;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+a:hover {
+  color: #1ae0ff;
+  opacity: 0.9;
 }
 
 @keyframes fadeInUp {
@@ -139,154 +196,7 @@ body {
 }
 
 *:focus {
-  outline: 2px solid #0099ff;
-  outline-offset: 2px;
-}
-
-a[href^="#"] {
-  scroll-behavior: smooth;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-body {
-  background-size: cover;
-  font-family: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-@keyframes slideInBottom {
-  from {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out;
-}
-
-.animate-fade-in-left {
-  animation: fadeInLeft 0.8s ease-out;
-}
-
-.animate-fade-in-right {
-  animation: fadeInRight 0.8s ease-out;
-}
-
-.animate-pulse {
-  animation: pulse 1s infinite;
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-
-.animate-slide-in-bottom {
-  animation: slideInBottom 0.8s ease-out;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.hidden {
-  display: none;
-}
-
-.block {
-  display: block;
-}
-
-.transition-all {
-  transition: all 0.3s ease;
-}
-
-.shadow {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.shadow-lg {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-*:focus {
-  outline: 2px solid #0099ff;
+  outline: 2px solid #00a8ff;
   outline-offset: 2px;
 }
 
@@ -296,7 +206,8 @@ a[href^="#"] {
 
 .contact {
   min-height: 100vh;
-  background: rgba(3, 37, 65, 0.8);
+  background: rgba(3, 37, 65, 0.85);
+  padding-top: 80px;
 }
 .contact .contact_container {
   max-width: 800px;
@@ -304,7 +215,7 @@ a[href^="#"] {
   padding: 20px;
 }
 .contact .contact_container .contact_content {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.85);
   border-radius: 12px;
   padding: 40px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -385,43 +296,202 @@ a[href^="#"] {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .contact .contact_container {
-    margin: 20px auto;
-    padding: 15px;
+    max-width: 700px;
+    padding: 80px 20px 20px;
+  }
+  .contact .contact_container .contact_content {
+    padding: 35px 30px;
+  }
+  .contact .contact_container .contact_content .contact_message h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message p {
+    font-size: 1.15rem;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message ul li {
+    font-size: 1.05rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact {
+    padding-top: 70px;
+  }
+  .contact .contact_container {
+    max-width: 90vw;
+    margin: 10px auto;
+    padding: 20px 12px;
   }
   .contact .contact_container .contact_content {
     padding: 30px 20px;
+    border-radius: 10px;
   }
   .contact .contact_container .contact_content .contact_message h2 {
     font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message {
+    margin: 25px 0;
   }
   .contact .contact_container .contact_content .contact_message .fun_message p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message ul {
+    margin: 15px 0;
   }
   .contact .contact_container .contact_content .contact_message .fun_message ul li {
     font-size: 1rem;
+    margin: 12px 0;
   }
   .contact .contact_container .contact_content .contact_message .fun_message .highlight {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    margin: 25px 0;
+  }
+  .contact .contact_container .contact_content .contact_message .contact_details {
+    gap: 15px;
+    margin: 30px 0;
   }
   .contact .contact_container .contact_content .contact_message .contact_details .contact_item {
+    font-size: 1rem;
+    gap: 12px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .contact .contact_container .contact_content .contact_message .contact_details .contact_item i {
+    font-size: 1.2rem;
+  }
+  .contact .contact_container .contact_content .contact_message .cta_message {
+    margin-top: 25px;
+  }
+  .contact .contact_container .contact_content .contact_message .cta_message p {
+    font-size: 1.05rem;
+  }
+  .contact .contact_container .contact_content .contact_message .cta_message .availability {
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact .contact_container {
+    padding: 12px 10px;
+  }
+  .contact .contact_container .contact_content {
+    padding: 25px 18px;
+  }
+  .contact .contact_container .contact_content .contact_message h2 {
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message {
+    margin: 20px 0;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message p {
+    font-size: 1rem;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message ul li {
+    font-size: 0.95rem;
+    margin: 10px 0;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message .highlight {
+    font-size: 1.1rem;
+    margin: 20px 0;
+  }
+  .contact .contact_container .contact_content .contact_message .contact_details {
+    gap: 12px;
+    margin: 25px 0;
+  }
+  .contact .contact_container .contact_content .contact_message .contact_details .contact_item {
+    font-size: 0.95rem;
+    gap: 10px;
+  }
+  .contact .contact_container .contact_content .contact_message .cta_message p {
     font-size: 1rem;
   }
 }
 @media only screen and (max-width: 480px) {
   .contact {
-    padding: 10px;
+    padding: 10px 8px;
   }
   .contact .contact_container {
-    padding: 10px;
+    padding: 10px 8px;
   }
   .contact .contact_container .contact_content {
     padding: 20px 15px;
+    border-radius: 8px;
   }
   .contact .contact_container .contact_content .contact_message h2 {
     font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message {
+    margin: 18px 0;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message ul {
+    margin: 12px 0;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message ul li {
+    font-size: 0.9rem;
+    margin: 8px 0;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message .highlight {
+    font-size: 1.05rem;
+    margin: 18px 0;
+  }
+  .contact .contact_container .contact_content .contact_message .contact_details {
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .contact .contact_container .contact_content .contact_message .contact_details .contact_item {
+    font-size: 0.9rem;
+    gap: 8px;
+  }
+  .contact .contact_container .contact_content .contact_message .contact_details .contact_item i {
+    font-size: 1.1rem;
+  }
+  .contact .contact_container .contact_content .contact_message .cta_message {
+    margin-top: 20px;
+  }
+  .contact .contact_container .contact_content .contact_message .cta_message p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .contact .contact_container .contact_content .contact_message .cta_message .availability {
+    margin-top: 12px;
+    padding: 10px;
+    font-size: 0.9rem;
   }
 }
-
-/*# sourceMappingURL=contact.css.map */
+@media only screen and (max-width: 360px) {
+  .contact .contact_container {
+    padding: 8px 5px;
+  }
+  .contact .contact_container .contact_content {
+    padding: 18px 12px;
+  }
+  .contact .contact_container .contact_content .contact_message h2 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message p {
+    font-size: 0.9rem;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message ul li {
+    font-size: 0.85rem;
+  }
+  .contact .contact_container .contact_content .contact_message .fun_message .highlight {
+    font-size: 1rem;
+  }
+  .contact .contact_container .contact_content .contact_message .contact_details .contact_item {
+    font-size: 0.85rem;
+  }
+  .contact .contact_container .contact_content .contact_message .contact_details .contact_item i {
+    font-size: 1rem;
+  }
+}

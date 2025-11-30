@@ -10,6 +10,11 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 14px;
@@ -19,10 +24,63 @@ html {
 body {
   background-size: cover;
   font-family: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  font-weight: 400;
   line-height: 1.6;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Red Hat Display", "Jost", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f5f7fa;
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-size: clamp(3rem, 2.5rem + 3vw, 4.5rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
+}
+
+h3 {
+  font-size: clamp(2rem, 1.7rem + 1.5vw, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+}
+
+h5 {
+  font-size: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #b8bcc8;
+  line-height: 1.8;
+}
+
+a {
+  color: #00d4ff;
+  text-decoration: none;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+a:hover {
+  color: #1ae0ff;
+  opacity: 0.9;
 }
 
 @keyframes fadeInUp {
@@ -138,7 +196,7 @@ body {
 }
 
 *:focus {
-  outline: 2px solid #0099ff;
+  outline: 2px solid #00a8ff;
   outline-offset: 2px;
 }
 
@@ -148,8 +206,9 @@ a[href^="#"] {
 
 .certificates {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-  height: 10 0vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  min-height: 100vh;
+  padding-top: 80px;
 }
 .certificates .certificates_container {
   display: flex;
@@ -171,14 +230,14 @@ a[href^="#"] {
 .certificates .certificates_container .list .button {
   width: 400px;
   height: 50px;
-  background-color: rgba(15, 15, 70, 0.9);
+  background-color: rgba(15, 15, 70, 0.92);
   color: #ffffff;
   margin-top: 5px;
   font-size: 15px;
   padding: 8px 10px;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.85);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -186,49 +245,147 @@ a[href^="#"] {
   text-align: center;
 }
 .certificates .certificates_container .list .button:hover {
-  box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.75) inset;
+  box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.85) inset;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1200px) {
   .certificates .certificates_container {
-    padding-top: 10px;
+    padding: 80px 15px 30px;
+    gap: 20px;
   }
   .certificates .certificates_container .img img {
-    width: 350px;
+    width: 500px;
+    max-width: 90vw;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   }
   .certificates .certificates_container .list {
-    height: 350px;
+    height: 450px;
+    margin-left: 15px;
   }
   .certificates .certificates_container .list .button {
-    width: 300px;
-    height: 50px;
-    font-size: 15px;
-    overflow: hidden;
-    padding: 0;
-    margin: 5px auto;
+    width: 350px;
+    max-width: 90vw;
   }
 }
-@media only screen and (max-width: 700px) {
-  .certificates .certificates_container .img img {
-    width: 95vw;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .certificates {
-    padding: 0;
-  }
+@media only screen and (max-width: 1024px) {
   .certificates .certificates_container {
-    padding: 0;
+    padding: 70px 15px 25px;
+  }
+  .certificates .certificates_container .img img {
+    width: 450px;
+    max-width: 85vw;
   }
   .certificates .certificates_container .list {
-    width: 100vw;
-    padding: 0;
-    margin: 0 auto;
-    height: 300px;
+    height: 400px;
+    margin-left: 10px;
   }
-  .certificates .certificates_container .list button {
-    width: 100vw;
+  .certificates .certificates_container .list .button {
+    width: 320px;
+    max-width: 85vw;
+    font-size: 14px;
   }
 }
-
-/*# sourceMappingURL=certificates.css.map */
+@media only screen and (max-width: 768px) {
+  .certificates {
+    min-height: 100vh;
+    padding-top: 70px;
+  }
+  .certificates .certificates_container {
+    flex-direction: column;
+    padding: 25px 12px 20px;
+    gap: 15px;
+  }
+  .certificates .certificates_container .img {
+    order: 1;
+    width: 100%;
+  }
+  .certificates .certificates_container .img img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+  .certificates .certificates_container .list {
+    order: 2;
+    height: 350px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .certificates .certificates_container .list::-webkit-scrollbar {
+    width: 6px;
+  }
+  .certificates .certificates_container .list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+  }
+  .certificates .certificates_container .list .button {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 50px;
+    font-size: 14px;
+    padding: 10px 12px;
+    margin: 6px 0;
+    -webkit-tap-highlight-color: transparent;
+    transition: all 0.3s ease;
+  }
+  .certificates .certificates_container .list .button:active {
+    transform: scale(0.98);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .certificates .certificates_container {
+    padding: 65px 10px 15px;
+  }
+  .certificates .certificates_container .img img {
+    border-radius: 6px;
+  }
+  .certificates .certificates_container .list {
+    height: 300px;
+    padding: 6px;
+  }
+  .certificates .certificates_container .list .button {
+    font-size: 13px;
+    padding: 9px 10px;
+    margin: 5px 0;
+    min-height: 45px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .certificates .certificates_container {
+    padding: 60px 8px 12px;
+  }
+  .certificates .certificates_container .list {
+    height: 280px;
+    padding: 5px;
+    border-radius: 6px;
+  }
+  .certificates .certificates_container .list .button {
+    font-size: 12px;
+    padding: 8px 10px;
+    margin: 4px 0;
+    min-height: 42px;
+    border-radius: 4px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .certificates .certificates_container {
+    padding: 55px 5px 10px;
+  }
+  .certificates .certificates_container .list {
+    height: 260px;
+    padding: 4px;
+  }
+  .certificates .certificates_container .list .button {
+    font-size: 11px;
+    padding: 7px 8px;
+    margin: 3px 0;
+    min-height: 40px;
+  }
+}
